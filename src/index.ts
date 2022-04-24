@@ -4,14 +4,14 @@
 //Decorators
 
 //Static Type
-
 //1.Built-In
 //Number Type  ----> 1,4.5,100000000000000,4.2f,0.01541
 //String Type  ----> "Dev",'A',"145"
 //Boolean Type ----> 1,0,true,false
+
 //Void Type    ----> YES Memory Allocations
 //Null Type    ----> NO Memory Allocations
-//Undefined
+//Undefined    ----> NO Memory Allocations
 //Any
 
 //2.User-Defined

@@ -1,10 +1,14 @@
 //Where String is parameter datatype and void is the return type
-function log(msg: string): number {
-  console.log(msg);
-  return 1;
+
+function log(x: number | string | boolean | void): string | number {
+  console.log(x);
+  return 5;
 }
 
-log('tui chi');
+log(5);
+log('Sahoo');
+log(true);
+log(undefined);
 
 //public static void main() this main function return nothing
 

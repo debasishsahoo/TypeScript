@@ -11,7 +11,7 @@ console.log(outcome2);
 let str = 'Hello TypeScript';
 console.log(str.charAt(0));
 console.log(str.charAt(2));
-console.log("Hello World".charAt(2));
+console.log('Hello World'.charAt(6));
 //concat()
 let str1 = 'Hello ';
 let str2 = 'TypeScript';

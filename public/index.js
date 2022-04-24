@@ -10,7 +10,7 @@
 //Boolean Type ----> 1,0,true,false
 //Void Type    ----> YES Memory Allocations
 //Null Type    ----> NO Memory Allocations
-//Undefined
+//Undefined    ----> NO Memory Allocations
 //Any
 //2.User-Defined
 //User-Defined Type
