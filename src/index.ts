@@ -34,21 +34,3 @@ let output2 = Compare<number>(5, 6);
 let output3 = Compare<number>(5.5, 6.8);
 let output4 = Compare<any>(5.0, 5);
 let output5 = Compare<any>('5.0', 5);
-
-//Decorators
-
-function f() {
-  console.log('f():Evaluated');
-  return function (
-    target,
-    propertyKey: string,
-    descriptor: PropertyDescriptor
-  ) {
-    console.log('f():Called');
-  };
-}
-
-class C {
-  @f()
-  method() {}
-}
