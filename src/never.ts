@@ -1,24 +1,26 @@
-function raiseError(msg: string): never {
-  throw new Error(msg);
-}
-raiseError('Deb');
-
-function KeeProcessing(): never {
-  while (true) {
-    console.log('I always dose somethisng and never ends');
-  }
-}
-
-KeeProcessing();
-// function fn(a:string|number):boolean
-// {
-//     if(typeof(a==="string")){
-//         return true;
-//     }
-//     else if(typeof(a==="number")){
-//         return false;
-//     }
-//     else{
-//         return false;
-//     }
+// function throwError(errorMsg: string): never {
+//   throw new Error(errorMsg);
 // }
+
+// function KeepProcessing(): never {
+//   while (true) {
+//     console.log('I always dose something and never Ends');
+//   }
+// }
+
+// throwError('This an error');
+// //KeepProcessing();
+
+// //void and Never******
+
+// let sagnik: void = undefined;
+
+// let Sourav: never;
+
+//methods
+function SayHi(): void {
+  console.log('HI');
+}
+
+let speech: void = SayHi();
+console.log('speech:', speech);

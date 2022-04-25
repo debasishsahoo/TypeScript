@@ -1,9 +1,7 @@
 let list1: number[] = [1, 2, 3];
-
 console.log('list1:', list1.length);
 
 let list2: Array<number> = [1, 2, 3];
-
 console.log(
   'list2:',
   list2.map((e) => e * 2)
@@ -17,15 +15,30 @@ Skills.push('NODEJS');
 
 console.log('Skills:', Skills);
 
+Skills.pop();
+
+console.log('Skills:', Skills);
+
 let fruits: Array<string>;
+
 fruits = ['Apple', 'Orange', 'Banana'];
 
 let ids: Array<number>;
+
 ids = [23, 34, 100, 124, 44];
 
 let values1: (string | number)[] = ['Apple', 2, 'Orange', 3, 4, 'Banana'];
 
-let values2: Array<string | number> = ['Apple', 2, 'Orange', 3, 4, 'Banana'];
+let values2: Array<string | number> = [
+  'Apple',
+  'PineApple',
+  2,
+  'Orange',
+  3,
+  4,
+  'Banana',
+];
+let Values3: (string | number)[] = [1, 2, 3, 4, 'Apple', 6];
 
 //Access Array Elements
 
@@ -48,11 +61,14 @@ console.log(fruits);
 
 console.log(fruits.pop());
 
+console.log(fruits);
+
+
 fruits.push('Papaya');
 
 console.log(fruits);
 
-fruits = fruits.concat(['Fig', 'Mango']);
+fruits = fruits.concat(['Fig  ', 'Mango']);
 
 console.log(fruits);
 
