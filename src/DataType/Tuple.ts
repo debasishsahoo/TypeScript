@@ -10,6 +10,7 @@ let Color: [number, number, number] = [255, 0, 0];
 let BGCOLOR, HEADERCOLOR: [number, number, number, number?];
 
 BGCOLOR = [0, 255, 255, 0.5];
+
 HEADERCOLOR = [0, 255, 0];
 
 //Tuple Array

@@ -27,7 +27,7 @@ let ids: Array<number>;
 
 ids = [23, 34, 100, 124, 44];
 
-let values1: (string | number)[] = ['Apple', 2, 'Orange', 3, 4, 'Banana'];
+let values1: (number | string)[] = ['Apple', 2, 'Orange', 3, 4, 'Banana'];
 
 let values2: Array<string | number> = [
   'Apple',
@@ -62,7 +62,6 @@ console.log(fruits);
 console.log(fruits.pop());
 
 console.log(fruits);
-
 
 fruits.push('Papaya');
 
