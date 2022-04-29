@@ -4,6 +4,9 @@ let num2 = 0x37cf;
 let num3 = 0o337;
 let num4 = 0b111001;
 let bigNumber = 9007199254740991n;
+let NumberValue = 0;
+let numberObj = new Number(1500);
+//NumberValue = numberObj;
 console.log('num1:', num1);
 console.log('num2:', num2);
 console.log('num3:', num3);
@@ -56,3 +59,52 @@ console.log(myNumber.toString(5));
 //valueOf()
 console.log(myNumber);
 console.log(myNumber.valueOf());
+//MAX_SAFE_INTEGER & MIN_SAFE_INTEGER
+console.log(Number.MAX_SAFE_INTEGER);
+console.log(Number.MIN_SAFE_INTEGER);
+console.log(Number.MAX_SAFE_INTEGER + 1);
+console.log(Number.MAX_SAFE_INTEGER + 2);
+//isSafeInteger
+console.log(Number.isSafeInteger(Number.MAX_SAFE_INTEGER));
+console.log(Number.isSafeInteger(Number.MAX_SAFE_INTEGER + 1));
+//MAX_VALUE & MIN_VALUE
+console.log(Number.MAX_VALUE);
+console.log(Number.MIN_VALUE);
+console.log(Number.MAX_VALUE + 100 == Number.MAX_VALUE);
+//Number.EPSILON
+console.log(Number.EPSILON);
+function numberEquals(x, y) {
+    return Math.abs(x - y) < Number.EPSILON;
+}
+console.log(numberEquals(0.1 + 0.2, 0.3));
+//Infinity
+console.log(3 / 0);
+console.log(typeof Infinity);
+console.log(Math.pow(10, 1000));
+console.log(Math.log(0));
+console.log(Number.MAX_VALUE + 10 ** 1000);
+console.log(Infinity + 1);
+console.log(Infinity + Infinity);
+console.log(Infinity * 3);
+console.log(Infinity / 3);
+console.log(1 / Infinity);
+console.log(Infinity * 0);
+console.log(Infinity / Infinity);
+console.log(Infinity - Infinity);
+//POSITIVE_INFINITY & NEGATIVE_INFINITY
+console.log(3 / 0);
+console.log(-3 / 0);
+console.log(Number.POSITIVE_INFINITY);
+console.log(Number.NEGATIVE_INFINITY);
+console.log(Infinity > 1000);
+console.log(Infinity == 1000);
+console.log(Infinity < 1000);
+console.log(-Infinity > 1000);
+console.log(-Infinity == 1000);
+console.log(-Infinity < 1000);
+console.log(Infinity > -Infinity);
+console.log(Infinity == Infinity);
+//isFinite
+console.log(Number.isFinite(Number.POSITIVE_INFINITY));
+console.log(Number.isFinite(100));
+console.log(Number.isFinite('100'));
