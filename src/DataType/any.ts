@@ -8,3 +8,9 @@ console.log('something:', something);
 let arr: any[] = ['Debasish', 212, true];
 arr.push('Sahoo');
 console.log(arr);
+
+let anyVar: any;
+anyVar = '100.5175';
+anyVar = {};
+anyVar = 100.51575;
+console.log(anyVar.toFixed(2));
