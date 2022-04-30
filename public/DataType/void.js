@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 //Where String is parameter datatype and void is the return type
 function log(x) {
     console.log(x);
@@ -12,3 +13,9 @@ log(undefined);
 let useless = undefined;
 //useless = 1;
 console.log('useless:', useless);
+let a;
+let b;
+a = undefined;
+a = 'test';
+b = a; //ok
+a = b;

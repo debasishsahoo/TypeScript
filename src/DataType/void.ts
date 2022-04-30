@@ -1,3 +1,4 @@
+export {};
 //Where String is parameter datatype and void is the return type
 
 function log(x: number | string | boolean | void): string | number {
@@ -17,3 +18,12 @@ let useless: void = undefined;
 //useless = 1;
 
 console.log('useless:', useless);
+
+let a: void;
+let b: undefined;
+a = undefined;
+a = 'test';
+
+b = a; //ok
+
+a = b;
