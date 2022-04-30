@@ -103,6 +103,9 @@ console.log(str.toLowerCase());
 
 console.log('HELLO TYPESCRIPT'.toLowerCase());
 
+
+
+
 //Using Expressions
 let ax1: number = 1;
 let bx1: number = 2;
@@ -260,20 +263,6 @@ console.log(parseInt('0o51', 16));
 
 //Parsefloat
 
-3;
-4;
-5;
-6;
-7;
-8;
-9;
-10;
-11;
-12;
-13;
-14;
-15;
-16;
 
 console.log(parseFloat('100'));
 console.log(parseFloat('100.5175'));

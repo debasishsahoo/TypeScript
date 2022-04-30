@@ -24,6 +24,8 @@ console.log(myNumber.toExponential(2));
 console.log(myNumber.toExponential(3));
 console.log(myNumber.toExponential(4));
 
+
+
 //toFixed()*
 
 myNumber = 10.8788;
@@ -75,6 +77,8 @@ console.log(myNumber.toString(5));
 console.log(myNumber);
 console.log(myNumber.valueOf());
 
+
+//number settings code
 //MAX_SAFE_INTEGER & MIN_SAFE_INTEGER
 console.log(Number.MAX_SAFE_INTEGER);
 console.log(Number.MIN_SAFE_INTEGER);

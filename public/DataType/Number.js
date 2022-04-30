@@ -59,6 +59,7 @@ console.log(myNumber.toString(5));
 //valueOf()
 console.log(myNumber);
 console.log(myNumber.valueOf());
+//number settings code
 //MAX_SAFE_INTEGER & MIN_SAFE_INTEGER
 console.log(Number.MAX_SAFE_INTEGER);
 console.log(Number.MIN_SAFE_INTEGER);
