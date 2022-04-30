@@ -83,7 +83,13 @@ console.log(Number.MIN_VALUE);
 console.log(Number.MAX_VALUE + 100 == Number.MAX_VALUE);
 //Number.EPSILON
 //Typescript Number.EPSILON property. It represents the difference between 1 and the smallest floating-point number greater than 1. It exists because not all decimal numbers can be represented accurately and exactly in the binary system.
+//0.1 when converted from decimal to binary results in 0.0001100110011001101. Now convert it back from binary to decimal will result in 0.1000003814697265625
+//The above case is similar to how 1/3 ( 0.33333) cannot be represented as accurately in decimal.
 console.log(Number.EPSILON);
+console.log(0.1 + 0.2);
+console.log(0.2 + 0.4);
+console.log(0.2 + 0.7);
+console.log((0.1 + 0.2) == .3);
 function numberEquals(x, y) {
     return Math.abs(x - y) < Number.EPSILON;
 }
