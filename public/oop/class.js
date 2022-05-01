@@ -1,20 +1,25 @@
 "use strict";
-class EnggStudent {
-    //Constructor
-    constructor(ID, NAME, DEPT, YEAR) {
+Object.defineProperty(exports, "__esModule", { value: true });
+class Student {
+    //constructor
+    constructor(ID, NAME) {
         this.id = ID;
         this.name = NAME;
-        this.dept = DEPT;
-        this.year = YEAR;
     }
-    //Method
-    GetYear() {
-        return this.year;
+    //Methods
+    GetName() {
+        return `Name: ${this.name}`;
     }
-    GetIDNAME() {
-        return `ID: ${this.id} and Name: ${this.name}`;
+    GetDetails(id) {
+        if (id !== null) {
+            return `ID: ${this.id} and Name: ${this.name}`;
+        }
+        else {
+            return `Please Send Any ID`;
+        }
     }
 }
-const obj = new EnggStudent(1, 'Abdul', 'CS', 2022);
+const obj = new Student(1, 'Sourav');
 console.log('obj:', obj);
-console.log('YEAR:', obj.GetYear());
+console.log('Name:', obj.GetName());
+console.log('Name:', obj.GetDetails(1));

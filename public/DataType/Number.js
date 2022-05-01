@@ -89,10 +89,13 @@ console.log(Number.EPSILON);
 console.log(0.1 + 0.2);
 console.log(0.2 + 0.4);
 console.log(0.2 + 0.7);
-console.log((0.1 + 0.2) == .3);
+console.log(0.1 + 0.2 == 0.3);
+console.log(0.1 + 0.2 === 0.30000000000000004);
+//abc() is abslute function
 function numberEquals(x, y) {
     return Math.abs(x - y) < Number.EPSILON;
 }
+//0.30000000000000004-0.3=0.00000000000000004
 console.log(numberEquals(0.1 + 0.2, 0.3));
 //Infinity can result in many ways. For Example, dividing any non zero number by zero results in infinity. The Typeof Infinity is a number
 //Infinity

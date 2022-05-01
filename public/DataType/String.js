@@ -74,12 +74,12 @@ console.log(`The addion of ${ax1} + ${bx1} is ${ax1 + bx1}`);
 let m = 11;
 console.log(`The m is ${m == 10 ? 'ten' : 'not ten'}`);
 const MAX = 100;
-// function doSomeWork(argument: number) {
-//   if (argument > MAX) {
-//     throw new Error(`At most ${MAX} allowed: ${argument}!`);
-//   }
-// }
-// doSomeWork(200);
+function doSomeWork(argument) {
+    if (argument > MAX) {
+        throw new Error(`At most ${MAX} allowed: ${argument} Given!`);
+    }
+}
+doSomeWork(100);
 //Nesting Expressions
 let x = 10;
 let y = 20;
@@ -97,7 +97,7 @@ function hi(strings, name) {
     return 'Hi';
 }
 console.log(`${msg} world`);
-console.log(hi `${msg} world`);
+console.log(hi `${msg}world`);
 //Parameters to Tagged Function
 let firstName = 'Sachin';
 let lastName = 'Tendulkar';

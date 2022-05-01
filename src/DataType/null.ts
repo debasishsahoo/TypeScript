@@ -1,28 +1,33 @@
+export {};
+//The value null represents the intentional absence of any object value. It represents nothing or no value. null means we know that the variable does not have any value. TypeScript does not set the value of a variable to null. We need to do set it explicitly.
 let a = null;
 console.log(a);
 console.log(typeof a);
 
-function person1(name: string, dateOfMarriage: Date | null) {
+function person(name: string, dateOfMarriage: Date | null) {
   return {
     name: name,
     dateOfMarriage: dateOfMarriage,
   };
 }
-console.log(person1('Debasish Sahoo', null));
+console.log(person('Debasish Sahoo', null));
 
-let nullVar1: null;
-console.log(nullVar1);
+//Null Data Type
+let NullVarible: null;
+console.log(NullVarible);
 
-nullVar1 = null;
-console.log(nullVar1);
+NullVarible = null;
+console.log(NullVarible);
 
 //Allowed
-nullVar1 = null;
-nullVar1 = undefined; //only if strictNullCheck is disabled
+NullVarible = null;
+NullVarible = undefined; //only if strictNullCheck is disabled
 
 //Not Allowed
-nullVar1 = 10; //type '10' is not assignable to type 'null'
-nullVar1 = {};
+NullVarible = 10; //type '10' is not assignable to type 'null'
+NullVarible = {};
+
+//Non Nullable Types
 
 let anyVar: any;
 let nullVar: null;
@@ -38,8 +43,12 @@ let numVar: number;
 undefVar = null; //Type 'null' is not assignable to type 'undefined'.
 numVar = null; //Type 'null' is not assignable to type 'number'.
 
-let a4 = null;
-console.log(typeof a4);
+//Typeof null is object
+
+let a2 = null;
+console.log(typeof a2);
+
+//Checking for Null
 
 let nVar: number | null | undefined;
 nVar = null;
@@ -56,6 +65,8 @@ let a5; //a has the default value of undefined
 console.log(a5 == null); //true because both null & undefined is treated as no value
 
 console.log(a5 === null);
+
+//null is falsy
 
 let a6 = null;
 

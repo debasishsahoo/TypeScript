@@ -89,7 +89,7 @@ console.log(typeof boolobj);
 console.log(boolobj.valueOf());
 console.log(typeof boolobj.valueOf());
 
-//Boolean vs boolean
+//Boolean vs boolean*
 
 let b1 = new Boolean(false);
 console.log(b1.valueOf()); //false

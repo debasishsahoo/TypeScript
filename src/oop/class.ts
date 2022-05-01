@@ -1,28 +1,31 @@
-class EnggStudent {
+export {};
+class Student {
   //Properties
   id: number;
   name: string;
-  dept: string;
-  year: number;
 
-  //Constructor
-  constructor(ID: number, NAME: string, DEPT: string, YEAR: number) {
+  //constructor
+  constructor(ID: number, NAME: string) {
     this.id = ID;
     this.name = NAME;
-    this.dept = DEPT;
-    this.year = YEAR;
   }
 
-  //Method
-  GetYear(): number {
-    return this.year;
+  //Methods
+  GetName(): string {
+    return `Name: ${this.name}`;
   }
-  GetIDNAME(): string {
-    return `ID: ${this.id} and Name: ${this.name}`;
+  GetDetails(id: number): string {
+    if (id !== null) {
+      return `ID: ${this.id} and Name: ${this.name}`;
+    } else {
+      return `Please Send Any ID`;
+    }
   }
 }
 
-const obj = new EnggStudent(1, 'Abdul', 'CS', 2022);
+const obj = new Student(1, 'Sourav');
 console.log('obj:', obj);
 
-console.log('YEAR:', obj.GetYear());
+console.log('Name:', obj.GetName());
+
+console.log('Name:', obj.GetDetails(1));

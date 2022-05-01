@@ -1,31 +1,41 @@
-function foo(x?: string) {
+export {};
+//Undefined is a primitive value that indicates that the value is not assigned. i.e. whenever we do not explicitly assign a value to a variable, TypeScript assigns the undefined value to it. It is an unintentional absence of any value.
+
+//Uninitialized variable
+let NumVar: number;
+console.log(NumVar);
+
+//Optional Function argument
+function foo1(x?: string) {
   console.log(x);
 }
-
-foo();
-
-function foo1(x: undefined) {
-  console.log(x); //undefined
-}
-
 foo1();
 
+function foo2(x: undefined) {
+  console.log(x); //undefined
+}
+foo2();
+
+//Non-existing array elements
 const cars: string[] = ['Saab', 'Volvo', 'BMW'];
 
 console.log(cars[5]);
 
+//Explicitly set to undefined
 let myVar = undefined;
 console.log('myVar:', myVar);
 
-let num: undefined; //num variable is of type undefined
+//Undefined Type
+let num: undefined;
 
-console.log(num); //undefined
-console.log(typeof num); //undefined
+console.log(num);
+console.log(typeof num);
 
-console.log(undefined); //undefined
-console.log(typeof undefined); //undefined
+//Global Undefined variable
+console.log(undefined);
+console.log(typeof undefined);
 
-console.log(globalThis.undefined); //undefined
+console.log(globalThis.undefined);
 console.log(typeof globalThis.undefined);
 
 abc();
@@ -36,14 +46,15 @@ function abc() {
   console.log(typeof undefined); //number
 }
 
+//Checking for undefined
 let a8: undefined;
 console.log(a8 === undefined); //true
 
+//Null & Undefined
 let a9: undefined;
-
 console.log(typeof a9 === 'undefined');
-
 let a10: undefined;
+console.log('a10:', a10);
 
 //loose equality check
 
