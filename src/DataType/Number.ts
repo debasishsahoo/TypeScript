@@ -121,8 +121,9 @@ console.log(0.1 + 0.2);
 console.log(0.2 + 0.4);
 console.log(0.2 + 0.7);
 
-console.log((0.1 + 0.2) ==.3); 
- 
+console.log(0.1 + 0.2 == 0.3);
+console.log( (0.1 + 0.2)=== 0.30000000000000004);
+
 function numberEquals(x: number, y: number) {
   return Math.abs(x - y) < Number.EPSILON;
 }

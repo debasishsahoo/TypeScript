@@ -1,3 +1,5 @@
+//The boolean is a primitive type in Typescript
+//It represents a simple true/false value. They are implemented as numerical values with a single binary digit (i.e., 0 & 1). The Boolean is an object wrapper for the primitive boolean value.
 //boolean declaration
 let id1: Boolean = false;
 let id2: Boolean = true;
