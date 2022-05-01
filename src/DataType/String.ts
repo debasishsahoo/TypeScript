@@ -103,9 +103,6 @@ console.log(str.toLowerCase());
 
 console.log('HELLO TYPESCRIPT'.toLowerCase());
 
-
-
-
 //Using Expressions
 let ax1: number = 1;
 let bx1: number = 2;
@@ -116,13 +113,13 @@ console.log(`The m is ${m == 10 ? 'ten' : 'not ten'}`);
 
 const MAX = 100;
 
-// function doSomeWork(argument: number) {
-//   if (argument > MAX) {
-//     throw new Error(`At most ${MAX} allowed: ${argument}!`);
-//   }
-// }
+function doSomeWork(argument: number) {
+  if (argument > MAX) {
+    throw new Error(`At most ${MAX} allowed: ${argument} Given!`);
+  }
+}
 
-// doSomeWork(200);
+doSomeWork(100);
 
 //Nesting Expressions
 
@@ -153,7 +150,7 @@ function hi(strings: TemplateStringsArray, name: string) {
 
 console.log(`${msg} world`);
 
-console.log(hi`${msg} world`);
+console.log(hi`${msg}world`);
 
 //Parameters to Tagged Function
 
@@ -262,7 +259,6 @@ console.log(parseInt('0o51', 8));
 console.log(parseInt('0o51', 16));
 
 //Parsefloat
-
 
 console.log(parseFloat('100'));
 console.log(parseFloat('100.5175'));

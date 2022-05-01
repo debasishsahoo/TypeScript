@@ -122,12 +122,13 @@ console.log(0.2 + 0.4);
 console.log(0.2 + 0.7);
 
 console.log(0.1 + 0.2 == 0.3);
-console.log( (0.1 + 0.2)=== 0.30000000000000004);
+console.log(0.1 + 0.2 === 0.30000000000000004);
 
-function numberEquals(x: number, y: number) {
+//abc() is abslute function
+function numberEquals(x: number, y: number): boolean {
   return Math.abs(x - y) < Number.EPSILON;
 }
-
+//0.30000000000000004-0.3=0.00000000000000004
 console.log(numberEquals(0.1 + 0.2, 0.3));
 
 //Infinity can result in many ways. For Example, dividing any non zero number by zero results in infinity. The Typeof Infinity is a number
@@ -137,7 +138,9 @@ console.log(3 / 0);
 console.log(typeof Infinity);
 
 //Any operations that result in a large number. is trated as Infinity
+
 console.log(Math.pow(10, 1000));
+
 console.log(Math.log(0));
 console.log(Number.MAX_VALUE + 10 ** 1000);
 
