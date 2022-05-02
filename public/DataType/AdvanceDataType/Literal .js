@@ -1,12 +1,6 @@
 "use strict";
 //TypeScript Literal Types restrict the value of a variable to finite valid values. This is in contrast to the variable which allows you to change value (except for TypeScript Constants). The latest version of Typescript supports the String Literal Types, Numeric Literal Types, Boolean Literal Types & Enum Literal Types
-//A literal is a notation for representing a fixed value in the source code. For Example, 1 is literal, because it represents the number 1. hello is literal because it represents the string “hello”. Similarly null is literal because it represents the value null.
-//TypeScript also allows us to define our own literal types. The latest version of Typescript supports the following Literal Types
-//String Literal Types
-//Numeric Literal Types
-//Boolean Literal Types
-//Enum Literal Types
-//String Literal Types
+Object.defineProperty(exports, "__esModule", { value: true });
 let engineStatus;
 console.log(typeof engineStatus); //Undefined
 console.log(engineStatus);
@@ -43,6 +37,9 @@ function getSize(size) {
     else if (size == 50) {
         return 'XXXL';
     }
+    else {
+        return 'Please Provide Proper Input';
+    }
 }
 getSize(35); //OK
 getSize(36); //Argument of type '36' is not assignable to parameter of type '35 | 38 | 41 | 44 | 47 | 50'
@@ -71,6 +68,7 @@ var Dir2;
 let a;
 a = Dir1.Up; //ok
 a = Dir1.Down; //Type 'Dir1.Down' is not assignable to type 'Dir1.Up | Dir2.Left'
+a = 1;
 //Literal Types
 function engine(value) {
     if (value == 'start' || value == true || value == 1) {

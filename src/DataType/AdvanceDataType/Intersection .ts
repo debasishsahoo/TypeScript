@@ -5,7 +5,6 @@ interface Person {
   name: string;
   age: number;
 }
-
 interface Student {
   studentCode: string;
   division: string;

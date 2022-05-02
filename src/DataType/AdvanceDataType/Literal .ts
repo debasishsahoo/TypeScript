@@ -9,7 +9,7 @@
 //Enum Literal Types
 
 //String Literal Types
-
+export {};
 let engineStatus: 'Active';
 console.log(typeof engineStatus); //Undefined
 console.log(engineStatus);
@@ -49,6 +49,8 @@ function getSize(size: 35 | 38 | 41 | 44 | 47 | 50): string {
     return 'XXL';
   } else if (size == 50) {
     return 'XXXL';
+  } else {
+    return 'Please Provide Proper Input';
   }
 }
 
@@ -89,6 +91,7 @@ let a: Dir1.Up | Dir2.Left;
 
 a = Dir1.Up; //ok
 a = Dir1.Down; //Type 'Dir1.Down' is not assignable to type 'Dir1.Up | Dir2.Left'
+a = 1;
 
 //Literal Types
 
