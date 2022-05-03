@@ -89,3 +89,62 @@ console.log(a7 == true); //false
 
 console.log(a7 === false); //false
 console.log(a7 === true);
+
+//StrictNullChecks
+interface Employee {
+  employeecode: number;
+  name: string;
+}
+
+let e1: Employee = {
+  employeecode: 10,
+  name: null,
+};
+
+let e2: Employee = {
+  employeecode: 10,
+  name: undefined,
+};
+
+let e3: Employee = null;
+
+interface Employee1 {
+  employeecode: number;
+  name: string | null | undefined;
+}
+
+let e4: Employee1 = {
+  employeecode: 10,
+  name: null,
+};
+
+let e5: Employee = {
+  employeecode: 10,
+  name: undefined,
+};
+
+let e6: Employee | null | undefined = null;
+
+//Marking Property & Parameter Optional
+
+interface Employee2 {
+  employeecode: number;
+  name?: string;
+}
+
+let e7: Employee = {
+  employeecode: 10,
+  name: undefined, //ok
+};
+
+let e8: Employee = {
+  employeecode: 10,
+  name: null, //Type 'null' is not assignable to type 'string | undefined'.ts(2322)
+};
+
+function getLength(s: string | null) {
+  if (s === null) {
+    return 0;
+  }
+  return s.length;
+}
