@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 //let email: string = 'mail@example.com';
 //let email = '';
 let email = '0';
-let selecteditem = email !== null && email !== void 0 ? email : 'No Email Selected';
+let selecteditem = email ?? 'No Email Selected';
 console.log(selecteditem);
 //Difference with ||
 let email1;
@@ -16,7 +16,7 @@ console.log(selecteditem); //"mail@example.com"
 email = '';
 selecteditem = email || 'No Email Selected';
 console.log(selecteditem); //No Email Selected
-selecteditem = email !== null && email !== void 0 ? email : 'No Email Selected';
+selecteditem = email ?? 'No Email Selected';
 console.log(selecteditem); //""
 //Difference with Conditional Operator
 let email2;
@@ -27,12 +27,12 @@ console.log(selecteditem); //No Email Selected
 let score;
 console.log(score || 'Please enter your score');
 //Please enter your score
-console.log(score !== null && score !== void 0 ? score : 'Please enter your score');
+console.log(score ?? 'Please enter your score');
 //Please enter your score
 score = 0;
 console.log(score || 'Please enter your score');
 //Please enter your score
-console.log(score !== null && score !== void 0 ? score : 'Please enter your score');
+console.log(score ?? 'Please enter your score');
 //0
 //Short-circuiting
 //?? like || & && operators, stops evaluating if the left-hand operand is not null/undefined. Hence the right-hand expression is not evaluated.
@@ -41,9 +41,9 @@ function getNumber() {
     a = a + 1;
     return a;
 }
-let b = null !== null && null !== void 0 ? null : getNumber();
+let b = null ?? getNumber();
 getNumber(); //not invoked
 console.log(a); //11
-b = 'Hello' !== null && 'Hello' !== void 0 ? 'Hello' : getNumber();
+b = 'Hello' ?? getNumber();
 //getNumber() is not invoked
 console.log(a); //10

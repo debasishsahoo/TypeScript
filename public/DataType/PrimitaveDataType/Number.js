@@ -104,7 +104,7 @@ console.log(typeof Infinity);
 //Any operations that result in a large number. is trated as Infinity
 console.log(Math.pow(10, 1000));
 console.log(Math.log(0));
-console.log(Number.MAX_VALUE + Math.pow(10, 1000));
+console.log(Number.MAX_VALUE + 10 ** 1000);
 //Dividing, Multiplying, and Adding to infinity is still infinit
 console.log(Infinity + 1);
 console.log(Infinity + Infinity);
