@@ -1,0 +1,8 @@
+Gathering Project Requirements
+As we were hinted to in our last day at the office, we are planning to push out a rather big update to our current banking system that will make us more competitive in the banking scene. Here’s a list of requirements that we’ll have to implement before we can push our new update live.
+
+Give users the option to open up a checking account to go along with their savings account.
+Limit the withdrawal amount from the checking account to $250/day.
+Limit the number of withdrawals from the savings account to 3/month.
+Give the users a two percent interest increase on their savings account per month.
+Give users the ability to make transfers between accounts.
