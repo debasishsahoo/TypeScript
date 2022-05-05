@@ -1,11 +1,11 @@
 "use strict";
-let num1 = 14;
-let num2 = 0x37cf;
-let num3 = 0o337;
-let num4 = 0b111001;
-let bigNumber = 9007199254740991n;
-let NumberValue = 0;
-let numberObj = new Number(1500);
+var num1 = 14;
+var num2 = 0x37cf;
+var num3 = 223;
+var num4 = 57;
+var bigNumber = 9007199254740991n;
+var NumberValue = 0;
+var numberObj = new Number(1500);
 //NumberValue = numberObj;
 console.log('num1:', num1);
 console.log('num2:', num2);
@@ -13,7 +13,7 @@ console.log('num3:', num3);
 console.log('num4:', num4);
 console.log('bigNumber:', bigNumber);
 //toExponential()
-let myNumber = 123456;
+var myNumber = 123456;
 console.log(myNumber.toExponential());
 console.log(myNumber.toExponential(1));
 console.log(myNumber.toExponential(2));
@@ -104,7 +104,7 @@ console.log(typeof Infinity);
 //Any operations that result in a large number. is trated as Infinity
 console.log(Math.pow(10, 1000));
 console.log(Math.log(0));
-console.log(Number.MAX_VALUE + 10 ** 1000);
+console.log(Number.MAX_VALUE + Math.pow(10, 1000));
 //Dividing, Multiplying, and Adding to infinity is still infinit
 console.log(Infinity + 1);
 console.log(Infinity + Infinity);

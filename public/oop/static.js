@@ -1,34 +1,41 @@
 "use strict";
 //Static Property
-class Circle {
-    static calculateArea(radius) {
-        return this.pi * radius * radius;
+var Circle = /** @class */ (function () {
+    function Circle() {
     }
-}
-Circle.pi = 3.14;
+    Circle.calculateArea = function (radius) {
+        return this.pi * radius * radius;
+    };
+    Circle.pi = 3.14;
+    return Circle;
+}());
 Circle.pi;
 Circle.calculateArea(5);
 //Static Members
-class Circle1 {
-    constructor() {
+var Circle1 = /** @class */ (function () {
+    function Circle1() {
         this.pi = 3;
     }
-}
-Circle1.pi = 3.14;
+    Circle1.pi = 3.14;
+    return Circle1;
+}());
 Circle1.pi;
-let circleObj = new Circle1();
+var circleObj = new Circle1();
 circleObj.pi;
 //Static and Non-static Members
-class Circle2 {
-    static calculateArea(radius) {
+var Circle2 = /** @class */ (function () {
+    function Circle2() {
+    }
+    Circle2.calculateArea = function (radius) {
         return this.pi * radius * radius;
-    }
-    calculateCircumference(radius) {
+    };
+    Circle2.prototype.calculateCircumference = function (radius) {
         return 2 * Circle.pi * radius;
-    }
-}
-Circle2.pi = 3.14;
+    };
+    Circle2.pi = 3.14;
+    return Circle2;
+}());
 Circle2.calculateArea(5); // returns 78.5
-let circleObj1 = new Circle2();
+var circleObj1 = new Circle2();
 circleObj1.calculateCircumference(5); // returns 31.4000000
 circleObj1.calculateArea(); // <-- cannot call this

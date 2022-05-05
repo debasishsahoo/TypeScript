@@ -2,14 +2,15 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Employee = exports.age = void 0;
 exports.age = 20;
-class Employee {
-    constructor(name, code) {
+var Employee = /** @class */ (function () {
+    function Employee(name, code) {
         this.empName = name;
         this.empCode = code;
     }
-    displayEmployee() {
+    Employee.prototype.displayEmployee = function () {
         console.log('Employee Code: ' + this.empCode + ', Employee Name: ' + this.empName);
-    }
-}
+    };
+    return Employee;
+}());
 exports.Employee = Employee;
-let companyName = 'XYZ';
+var companyName = 'XYZ';

@@ -59,7 +59,7 @@ console.log(9 >>> 2); //2
 console.log(-9 >>> 1); //2147483643
 console.log(-9 >>> 2); //1073741821
 //Bitwise assignment operators
-let y = 9;
+var y = 9;
 y &= 7;
 console.log(y); //1
 //is same as

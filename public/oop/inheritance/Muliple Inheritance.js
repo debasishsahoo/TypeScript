@@ -1,26 +1,31 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const Mixin_1 = require("./Mixin");
-class Disposable {
-    constructor() {
+var Mixin_1 = require("./Mixin");
+var Disposable = /** @class */ (function () {
+    function Disposable() {
         this.IDisposable = false;
     }
-    Disposed() {
+    Disposable.prototype.Disposed = function () {
         this.IDisposable = true;
-    }
-}
-class Activateable {
-    constructor() {
+    };
+    return Disposable;
+}());
+var Activateable = /** @class */ (function () {
+    function Activateable() {
         this.IActivateble = false;
     }
-    Activate() {
+    Activateable.prototype.Activate = function () {
         this.IActivateble = true;
-    }
-    Dectivate() {
+    };
+    Activateable.prototype.Dectivate = function () {
         this.IActivateble = false;
+    };
+    return Activateable;
+}());
+var Employee = (0, Mixin_1.DisposableMixin)((0, Mixin_1.ActivateableMixin)(/** @class */ (function () {
+    function class_1() {
     }
-}
-const Employee = (0, Mixin_1.DisposableMixin)((0, Mixin_1.ActivateableMixin)(class {
-}));
-const example = new Employee();
+    return class_1;
+}())));
+var example = new Employee();
 function takeExample(Ex) { }

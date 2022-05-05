@@ -1,6 +1,6 @@
 "use strict";
-let apps = ['C#', 'Java', 'C++'];
-let ProgramingLangugae = [];
+var apps = ['C#', 'Java', 'C++'];
+var ProgramingLangugae = [];
 apps.forEach(function (item) {
     ProgramingLangugae.push(item);
 });

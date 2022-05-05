@@ -1,2 +1,2 @@
 "use strict";
-let greetings = 'Hello World!';
+var greetings = 'Hello World!';

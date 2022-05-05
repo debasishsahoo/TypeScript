@@ -40,7 +40,7 @@ var Month;
     Month[Month["Dec"] = 11] = "Dec";
 })(Month || (Month = {}));
 function IsItSummer(month) {
-    let isSummer;
+    var isSummer;
     switch (month) {
         case Month.Jan:
         case Month.Jul:
@@ -67,7 +67,7 @@ var Weekdays;
 console.log(Weekdays.Monday); //1
 console.log(Weekdays['Monday']); //1
 console.log(Weekdays['1']); //Monday
-let holiday = Weekdays.Sunday;
+var holiday = Weekdays.Sunday;
 console.log(holiday); //7
 console.log(typeof Weekdays); //object
 console.log(typeof holiday);
@@ -139,7 +139,7 @@ console.log(VehcileType['Car']); //Car
     VehcileType["Plane"] = "P";
     VehcileType["Train"] = "T";
 })(VehcileType || (VehcileType = {}));
-let vehicle = VehcileType.Plane;
+var vehicle = VehcileType.Plane;
 printName(vehicle);
 function printName(val) {
     switch (val) {
@@ -157,7 +157,7 @@ function printName(val) {
             break;
     }
 }
-const value = VehcileType.Car;
+var value = VehcileType.Car;
 if (value === VehcileType.Car || value === VehcileType.Train) {
     console.log('Please choose a plane');
     console.log(value);

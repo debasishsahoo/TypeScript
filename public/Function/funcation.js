@@ -9,11 +9,11 @@ function Sum(x, y) {
 }
 Sum(2, 3); // returns 5
 //Anonymous Function
-let greeting = function () {
+var greeting = function () {
     console.log('Hello TypeScript!');
 };
 greeting(); //Output: Hello TypeScript!
-let Sum = function (x, y) {
+var Sum = function (x, y) {
     return x + y;
 };
 Sum(2, 3); // returns 5
@@ -32,14 +32,16 @@ Greet('Hello', 'Steve'); //OK, returns "Hello Steve!"
 Greet('Hi'); // OK, returns "Hi undefined!".
 Greet('Hi', 'Bill', 'Gates'); //Compiler Error: Expected 2 arguments, but got 3.
 //Default Parameters
-function Greet(name, greeting = 'Hello') {
+function Greet(name, greeting) {
+    if (greeting === void 0) { greeting = 'Hello'; }
     return greeting + ' ' + name + '!';
 }
 Greet('Steve'); //OK, returns "Hello Steve!"
 Greet('Steve', 'Hi'); // OK, returns "Hi Steve!".
 Greet('Bill'); //OK, returns "Hello Bill!"
 //Function Callings
-function Greet(greeting = 'Hello', name) {
+function Greet(greeting, name) {
+    if (greeting === void 0) { greeting = 'Hello'; }
     return greeting + ' ' + name + '!';
 }
 Greet(undefined, 'Steve'); //returns "Hello Steve!"

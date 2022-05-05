@@ -1,51 +1,54 @@
 "use strict";
-let StudentName = 'Debasish';
-let StudentDept = 'CS';
+var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
+};
+var StudentName = 'Debasish';
+var StudentDept = 'CS';
 //before ES6
-let outcome1 = StudentName + ' Study in the' + StudentDept + 'Dept';
+var outcome1 = StudentName + ' Study in the' + StudentDept + 'Dept';
 //After ES6
-let outcome2 = `${StudentName}  Study in the ${StudentDept} Dept`;
+var outcome2 = "".concat(StudentName, "  Study in the ").concat(StudentDept, " Dept");
 console.log(outcome1);
 console.log(outcome2);
-let message = 'Hello World';
+var message = 'Hello World';
 console.log(message);
 console.log(typeof message);
 //String function
-let color = String('red');
+var color = String('red');
 console.log(color);
 console.log(typeof color);
-let sentence = `Hello, welcome to the world of typescript,
-          the typed super of javascript`;
+var sentence = "Hello, welcome to the world of typescript,\n          the typed super of javascript";
 console.log(sentence);
-let longString = 'This is an example of long single line of string and it goes out of my editor screen so i need to wrap it';
-let longString1 = 'This is an example of long single line of string ' +
+var longString = 'This is an example of long single line of string and it goes out of my editor screen so i need to wrap it';
+var longString1 = 'This is an example of long single line of string ' +
     'and it goes out of my editor screen ' +
     'so i need to wrap it';
 console.log(longString1);
-let longString2 = 'This is an example of long single line of string \
+var longString2 = 'This is an example of long single line of string \
 and it goes out of my editor screen \
 so i need to wrap it';
 console.log(longString2);
 //charAt()
-let str = 'Hello TypeScript';
+var str = 'Hello TypeScript';
 console.log(str.charAt(0));
 console.log(str.charAt(2));
 console.log('Hello World'.charAt(6));
 //concat()
-let str1 = 'Hello ';
-let str2 = 'TypeScript';
+var str1 = 'Hello ';
+var str2 = 'TypeScript';
 console.log(str1.concat(str2));
 console.log(str1.concat(' ', str2));
 console.log(str1.concat(' Mr. ', 'Bond'));
 //indexOf()
-let str3 = 'TypeScript';
+var str3 = 'TypeScript';
 console.log(str3.indexOf('T'));
 console.log(str3.indexOf('p'));
 console.log(str3.indexOf('e'));
 console.log(str3.indexOf('T', 1));
 console.log(str3.indexOf('t', 1));
-let strValue = 'This is a primitive string. But is has properties & methods';
-let pos = strValue.indexOf('primitive');
+var strValue = 'This is a primitive string. But is has properties & methods';
+var pos = strValue.indexOf('primitive');
 console.log(pos);
 //replace()
 str1 = 'Hello Javascript';
@@ -68,23 +71,23 @@ console.log('hello typescript'.toUpperCase());
 console.log(str.toLowerCase());
 console.log('HELLO TYPESCRIPT'.toLowerCase());
 //Using Expressions
-let ax1 = 1;
-let bx1 = 2;
-console.log(`The addion of ${ax1} + ${bx1} is ${ax1 + bx1}`);
-let m = 11;
-console.log(`The m is ${m == 10 ? 'ten' : 'not ten'}`);
-const MAX = 100;
+var ax1 = 1;
+var bx1 = 2;
+console.log("The addion of ".concat(ax1, " + ").concat(bx1, " is ").concat(ax1 + bx1));
+var m = 11;
+console.log("The m is ".concat(m == 10 ? 'ten' : 'not ten'));
+var MAX = 100;
 function doSomeWork(argument) {
     if (argument > MAX) {
-        throw new Error(`At most ${MAX} allowed: ${argument} Given!`);
+        throw new Error("At most ".concat(MAX, " allowed: ").concat(argument, " Given!"));
     }
 }
 doSomeWork(100);
 //Nesting Expressions
-let x = 10;
-let y = 20;
-let varxy = `${x + y}`;
-console.log(`The addion of ${x} + ${y} is ${varxy}`);
+var x = 10;
+var y = 20;
+var varxy = "".concat(x + y);
+console.log("The addion of ".concat(x, " + ").concat(y, " is ").concat(varxy));
 //Escaping in template strings
 console.log('`');
 console.log('$');
@@ -92,18 +95,18 @@ console.log('${');
 console.log('${');
 console.log('${}');
 //Tagged Template
-let msg = 'Hello';
+var msg = 'Hello';
 function hi(strings, name) {
     return 'Hi';
 }
-console.log(`${msg} world`);
-console.log(hi `${msg}world`);
+console.log("".concat(msg, " world"));
+console.log(hi(__makeTemplateObject(["", "world"], ["", "world"]), msg));
 //Parameters to Tagged Function
-let firstName = 'Sachin';
-let lastName = 'Tendulkar';
-let topic = 'Typescript';
+var firstName = 'Sachin';
+var lastName = 'Tendulkar';
+var topic = 'Typescript';
 function say(strings, firstName, lastName, topic) {
-    let str = strings[0] +
+    var str = strings[0] +
         firstName +
         strings[1] +
         lastName +
@@ -112,29 +115,37 @@ function say(strings, firstName, lastName, topic) {
         strings[3];
     return str;
 }
-console.log(say `Welcome, ${firstName} ${lastName}. Learn ${topic} here`);
-function say1(strings, ...expr) {
+console.log(say(__makeTemplateObject(["Welcome, ", " ", ". Learn ", " here"], ["Welcome, ", " ", ". Learn ", " here"]), firstName, lastName, topic));
+function say1(strings) {
+    var expr = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        expr[_i - 1] = arguments[_i];
+    }
     console.log(strings);
     console.log(expr);
     return '';
 }
-console.log(say1 `Welcome, ${firstName} ${lastName}. Learn ${topic} here`);
-function say2(strings, ...expr) {
-    let str = '';
-    strings.forEach((string, i) => {
+console.log(say1(__makeTemplateObject(["Welcome, ", " ", ". Learn ", " here"], ["Welcome, ", " ", ". Learn ", " here"]), firstName, lastName, topic));
+function say2(strings) {
+    var expr = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        expr[_i - 1] = arguments[_i];
+    }
+    var str = '';
+    strings.forEach(function (string, i) {
         str += string + (expr[i] || '');
     });
     return str;
 }
-console.log(say2 `Welcome, ${firstName} ${lastName}. Learn ${topic} here`);
+console.log(say2(__makeTemplateObject(["Welcome, ", " ", ". Learn ", " here"], ["Welcome, ", " ", ". Learn ", " here"]), firstName, lastName, topic));
 //Raw strings
-let filePath = `C:\Development\profile\aboutme.html`;
-console.log(`The file was uploaded from: ${filePath}`);
+var filePath = "C:Developmentprofileaboutme.html";
+console.log("The file was uploaded from: ".concat(filePath));
 function tag(strings) {
     console.log(strings.raw);
     console.log(strings);
 }
-tag `string text line 1 \n string text line 2`;
+tag(__makeTemplateObject(["string text line 1 \n string text line 2"], ["string text line 1 \\n string text line 2"]));
 //Unary plus (+)
 console.log(+'100');
 console.log(+'100.5175');

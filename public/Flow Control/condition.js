@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 //If statement
-let a = 1;
-let b = 1;
+var a = 1;
+var b = 1;
 if (a > 0 && b > 0) {
     console.log('Both a & b are greater than 0');
 }
@@ -39,7 +39,7 @@ else {
     console.log('a is less than or equal 0');
     //This will execute
 }
-let c = a > 0 ? 'a is greater than 0' : 'a is not greater than 0';
+var c = a > 0 ? 'a is greater than 0' : 'a is not greater than 0';
 console.log(c);
 //Multiple conditions using else if\
 a = 10;
@@ -67,9 +67,9 @@ else {
     console.log('a s less than or equal to 10');
 }
 //Nested if
-let val1 = 20;
-let val2 = 10;
-let operation = '<';
+var val1 = 20;
+var val2 = 10;
+var operation = '<';
 if (operation == '>') {
     console.log('greater than');
     if (val1 > val2) {

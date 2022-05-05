@@ -1,7 +1,7 @@
 "use strict";
 //TypeScript Literal Types restrict the value of a variable to finite valid values. This is in contrast to the variable which allows you to change value (except for TypeScript Constants). The latest version of Typescript supports the String Literal Types, Numeric Literal Types, Boolean Literal Types & Enum Literal Types
 Object.defineProperty(exports, "__esModule", { value: true });
-let engineStatus;
+var engineStatus;
 console.log(typeof engineStatus); //Undefined
 console.log(engineStatus);
 engineStatus: 'Active';
@@ -10,12 +10,12 @@ console.log(typeof engineStatus); //String
 console.log(engineStatus); //Active
 engineStatus = 'active';
 //Union Types
-let engineMode;
+var engineMode;
 engineMode = 'started'; //OK
 engineMode = 'stopped'; //OK
 engineMode = 'Debasish'; //error
 //Numeric Literal Types
-let Active;
+var Active;
 Active = 1; //OK
 Active = 0; //Type '0' is not assignable to type '1'
 function getSize(size) {
@@ -43,15 +43,15 @@ function getSize(size) {
 }
 getSize(35); //OK
 getSize(36); //Argument of type '36' is not assignable to parameter of type '35 | 38 | 41 | 44 | 47 | 50'
-let val;
+var val;
 val = 10;
 console.log(10 + val);
-let val1 = 10;
-let val2 = 10;
+var val1 = 10;
+var val2 = 10;
 val2 = val1; //ok
 val1 = val2; //Type 'number' is not assignable to type '10 | 11 | 12 | 13 | 14 | 15'
 //Boolean Literal Types
-let b;
+var b;
 b = true; //OK
 b = false; //Type 'false' is not assignable to type 'true'
 //Enum Literal Types
@@ -65,7 +65,7 @@ var Dir2;
     Dir2[Dir2["Left"] = 3] = "Left";
     Dir2[Dir2["Right"] = 4] = "Right";
 })(Dir2 || (Dir2 = {}));
-let a;
+var a;
 a = Dir1.Up; //ok
 a = Dir1.Down; //Type 'Dir1.Down' is not assignable to type 'Dir1.Up | Dir2.Left'
 a = 1;

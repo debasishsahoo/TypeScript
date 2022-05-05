@@ -1,19 +1,26 @@
 "use strict";
-let passcode = 'secret passcode';
-class Student {
-    get fullName() {
-        return this._fullName;
+var passcode = 'secret passcode';
+var Student = /** @class */ (function () {
+    function Student() {
     }
-    set fullName(newName) {
-        if (passcode && passcode == 'secret passcode') {
-            this._fullName = newName;
-        }
-        else {
-            console.log('Unauthorized update of student detail!');
-        }
-    }
-}
-let stud = new Student();
+    Object.defineProperty(Student.prototype, "fullName", {
+        get: function () {
+            return this._fullName;
+        },
+        set: function (newName) {
+            if (passcode && passcode == 'secret passcode') {
+                this._fullName = newName;
+            }
+            else {
+                console.log('Unauthorized update of student detail!');
+            }
+        },
+        enumerable: false,
+        configurable: true
+    });
+    return Student;
+}());
+var stud = new Student();
 stud.fullName = 'Virat Kohli';
 if (stud.fullName) {
     console.log(stud.fullName);

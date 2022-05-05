@@ -1,14 +1,14 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-let something = 'Hello World!';
+var something = 'Hello World!';
 something = 23;
 something = true;
 console.log('something:', something);
 //Any type Array
-let arr = ['Debasish', 212, true];
+var arr = ['Debasish', 212, true];
 arr.push('Sahoo');
 console.log(arr);
-let anyVar;
+var anyVar;
 anyVar = '100.5175';
 anyVar = {};
 anyVar = 100.51575;

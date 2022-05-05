@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-let empObject = {};
+var empObject = {};
 empObject.name = 'Abhishek';
 empObject.age = 25;
 empObject.gender = 'Male';

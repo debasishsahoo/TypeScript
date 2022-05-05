@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-let y = '1';
+var y = '1';
 console.log(typeof y); //string
 console.log(typeof +y); //number
 console.log(+y); //1

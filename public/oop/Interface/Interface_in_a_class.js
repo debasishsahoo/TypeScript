@@ -1,20 +1,21 @@
 "use strict";
 // implementing the interface
-class Employee {
-    constructor(firstN, lastN, getAge) {
+var Employee = /** @class */ (function () {
+    function Employee(firstN, lastN, getAge) {
         this.firstName = firstN;
         this.lastName = lastN;
         this.age = getAge;
     }
-    FullName() {
+    Employee.prototype.FullName = function () {
         return this.firstName + ' ' + this.lastName;
-    }
-    GetAge() {
+    };
+    Employee.prototype.GetAge = function () {
         return this.age;
-    }
-}
+    };
+    return Employee;
+}());
 // using the class that implements interface
-let myEmployee = new Employee('Abhishek', 'Mishra', 25);
-let fullName = myEmployee.FullName();
-let Age = myEmployee.GetAge();
+var myEmployee = new Employee('Abhishek', 'Mishra', 25);
+var fullName = myEmployee.FullName();
+var Age = myEmployee.GetAge();
 console.log('Name of Person: ' + fullName + '\nAge: ' + Age);

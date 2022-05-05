@@ -2,13 +2,13 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 //Less than (<)
 //Number Example
-let x = 10;
+var x = 10;
 console.log(x < 20); //true
 console.log(x < 15); //true
 console.log(x < 10); //false
 console.log(x < 5); //false
 //String Examples
-let y = 'Hello';
+var y = 'Hello';
 console.log(y < 'I'); //true
 console.log(y < 'Hello'); //false
 console.log(y < 'H'); //false
@@ -57,8 +57,8 @@ console.log(1 > null); //true     // null 0
 console.log(10 > 'a'); //false
 console.log(10 > NaN); //false
 console.log(10 > undefined); //false
-let date1 = new Date();
-let date2 = new Date();
+var date1 = new Date();
+var date2 = new Date();
 console.log(date1 > date2); //false
 console.log(date1 < date2); //false
 console.log(date1 >= date2); //true

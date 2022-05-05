@@ -1,17 +1,19 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-let sum = (x, y) => {
+var sum = function (x, y) {
     return x + y;
 };
 sum(10, 20); //returns 30
-let Print = () => console.log('Hello TypeScript');
+var Print = function () { return console.log('Hello TypeScript'); };
 Print(); //Output: Hello TypeScript
-class Employee {
-    constructor(code, name) {
-        this.display = () => console.log(this.empCode + ' ' + this.empName);
+var Employee = /** @class */ (function () {
+    function Employee(code, name) {
+        var _this = this;
+        this.display = function () { return console.log(_this.empCode + ' ' + _this.empName); };
         this.empName = name;
         this.empCode = code;
     }
-}
-let emp = new Employee(1, 'Ram');
+    return Employee;
+}());
+var emp = new Employee(1, 'Ram');
 emp.display();

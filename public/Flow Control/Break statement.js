@@ -1,10 +1,10 @@
 "use strict";
-for (let i = 0; i < 10; i++) {
-    if (i == 6)
+for (var i_1 = 0; i_1 < 10; i_1++) {
+    if (i_1 == 6)
         break;
-    console.log(i);
+    console.log(i_1);
 }
-let num2 = 0;
+var num2 = 0;
 while (num2 < 6) {
     if (num2 === 3) {
         break;
@@ -13,9 +13,9 @@ while (num2 < 6) {
 }
 console.log(num2);
 //Exapmple 1
-let val1 = 20;
-let val2 = 10;
-let operation = '-';
+var val1 = 20;
+var val2 = 10;
+var operation = '-';
 console.log('switch example');
 switch (operation) {
     case '+':
@@ -34,9 +34,9 @@ switch (operation) {
         console.log('Invalid operator');
 }
 console.log('switch finished');
-let i = 0;
-let j = 0;
-let sum = 0;
+var i = 0;
+var j = 0;
+var sum = 0;
 for (i = 0; i < 10; i++) {
     for (j = 0; j < 10; j++) {
         if (i == 6)
@@ -49,7 +49,7 @@ outerloop: for (i = 0; i < 10; i++) {
             break outerloop;
     }
 }
-let count = 1;
+var count = 1;
 outer: {
     inner: {
         console.log(count);
@@ -61,7 +61,7 @@ outer: {
     console.log(count);
 }
 console.log(count);
-let z = 0;
+var z = 0;
 blk1: {
     console.log(z);
     break blk2;

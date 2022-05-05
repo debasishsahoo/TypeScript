@@ -7,22 +7,22 @@ while (i < 5) {
     }
     console.log(i);
 }
-for (let i = 0; i < 5; i++) {
-    if (i == 3)
+for (var i_1 = 0; i_1 < 5; i_1++) {
+    if (i_1 == 3)
         continue;
-    console.log(i);
+    console.log(i_1);
 }
-for (let i = 0; i < 4; i++) {
-    for (let j = 0; j < 4; j++) {
-        if (j == 2)
+for (var i_2 = 0; i_2 < 4; i_2++) {
+    for (var j_1 = 0; j_1 < 4; j_1++) {
+        if (j_1 == 2)
             continue;
-        console.log(i + ' ' + j);
+        console.log(i_2 + ' ' + j_1);
     }
 }
-outerloop: for (let i = 0; i < 4; i++) {
-    innerloop: for (let j = 0; j < 4; j++) {
-        if (j == 2)
+outerloop: for (var i_3 = 0; i_3 < 4; i_3++) {
+    innerloop: for (var j_2 = 0; j_2 < 4; j_2++) {
+        if (j_2 == 2)
             continue outerloop;
-        console.log(i + ' ' + j);
+        console.log(i_3 + ' ' + j_2);
     }
 }

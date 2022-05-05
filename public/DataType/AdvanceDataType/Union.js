@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-let a;
+var a;
 a = 1;
 console.log(typeof a); //number
 console.log(a); //1
@@ -50,12 +50,18 @@ function someFn(arg) {
     }
 }
 //Not just Primitives
-class Product {
-}
-class Employee {
-}
+var Product = /** @class */ (function () {
+    function Product() {
+    }
+    return Product;
+}());
+var Employee = /** @class */ (function () {
+    function Employee() {
+    }
+    return Employee;
+}());
 function getName(item) {
-    let desc;
+    var desc;
     if (item instanceof Product) {
         desc = item.ProductName;
     }
@@ -79,5 +85,5 @@ engine(true); //OK
 engine('stop'); //OK
 engine(false); //OK
 engine('Start'); //Argument of type '"Start"' is not assignable to parameter of type 'boolean | "start" | "stop"'
-let str = 'start';
+var str = 'start';
 engine(str);

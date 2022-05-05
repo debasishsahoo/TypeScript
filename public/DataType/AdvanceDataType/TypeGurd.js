@@ -1,12 +1,27 @@
 "use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 Object.defineProperty(exports, "__esModule", { value: true });
 function formatAmount1(money) {
-    let formattedAmount = 'Rs. ' + parseInt(money); //ERROR
+    var formattedAmount = 'Rs. ' + parseInt(money); //ERROR
     console.log(formattedAmount);
     return formattedAmount;
 }
 function formatAmount2(money) {
-    let formattedAmount;
+    var formattedAmount;
     if (typeof money == 'string') {
         formattedAmount = 'Rs. ' + parseInt(money);
     }
@@ -17,27 +32,38 @@ function formatAmount2(money) {
     return formattedAmount;
 }
 //InstanceOf Type Guard
-class Person {
-    constructor() {
+var Person = /** @class */ (function () {
+    function Person() {
         this.name = '';
     }
-}
-class Customer extends Person {
-    code() {
+    return Person;
+}());
+var Customer = /** @class */ (function (_super) {
+    __extends(Customer, _super);
+    function Customer() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    Customer.prototype.code = function () {
         console.log('Customer Code');
-    }
-    buy() {
+    };
+    Customer.prototype.buy = function () {
         console.log('Bought');
+    };
+    return Customer;
+}(Person));
+var SalesPerson = /** @class */ (function (_super) {
+    __extends(SalesPerson, _super);
+    function SalesPerson() {
+        return _super !== null && _super.apply(this, arguments) || this;
     }
-}
-class SalesPerson extends Person {
-    code() {
+    SalesPerson.prototype.code = function () {
         console.log('SalesPerson Code');
-    }
-    sell() {
+    };
+    SalesPerson.prototype.sell = function () {
         console.log('Sold');
-    }
-}
+    };
+    return SalesPerson;
+}(Person));
 function getCode1(obj) {
     obj.code(); //Property 'code' does not exist on type 'Person'
 }
@@ -53,9 +79,9 @@ function getCode2(obj) {
 getCode2(new Customer()); //Customer Code
 getCode2(new SalesPerson()); //SalesPerson Code
 //In Operator
-const car = {
+var car = {
     make: 'Honda',
-    start() { },
+    start: function () { },
 };
 if ('start' in car) {
     console.log('Exists'); //True
@@ -63,22 +89,32 @@ if ('start' in car) {
 else {
     console.log('Not Exists');
 }
-class Customer1 extends Person {
-    code() {
+var Customer1 = /** @class */ (function (_super) {
+    __extends(Customer1, _super);
+    function Customer1() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    Customer1.prototype.code = function () {
         console.log('Customer Code');
-    }
-    buy() {
+    };
+    Customer1.prototype.buy = function () {
         console.log('Bought');
+    };
+    return Customer1;
+}(Person));
+var SalesPerson1 = /** @class */ (function (_super) {
+    __extends(SalesPerson1, _super);
+    function SalesPerson1() {
+        return _super !== null && _super.apply(this, arguments) || this;
     }
-}
-class SalesPerson1 extends Person {
-    code() {
+    SalesPerson1.prototype.code = function () {
         console.log('SalesPerson Code');
-    }
-    sell() {
+    };
+    SalesPerson1.prototype.sell = function () {
         console.log('Sold');
-    }
-}
+    };
+    return SalesPerson1;
+}(Person));
 function getCode3(obj) {
     if ('buy' in obj) {
         obj.buy();

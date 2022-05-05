@@ -5,15 +5,15 @@ Object.defineProperty(exports, "__esModule", { value: true });
 function SayHi() {
     console.log('HI');
 }
-let speech = SayHi();
+var speech = SayHi();
 console.log('speech:', speech);
 //Characteristics of Never
-let neverVar;
-let v1;
-let v2;
-let v3;
-let v4;
-let v5;
+var neverVar;
+var v1;
+var v2;
+var v3;
+var v4;
+var v5;
 v1 = neverVar;
 v2 = neverVar;
 v3 = neverVar;
@@ -30,14 +30,14 @@ neverVar = v5;
 //has no return statement
 //Or has a return statement which returns never
 //does not have an endpoint
-let x = function (message) {
+var x = function (message) {
     throw new message();
 };
 //arrow function
-let y = (message) => {
+var y = function (message) {
     throw new message();
 };
-let x1 = function (message) {
+var x1 = function (message) {
     throw new message();
 };
 // f a function has its return type annotated with never.
@@ -47,15 +47,15 @@ function x1(message) {
     return message;
 }
 function x2(message) {
-    let y = message;
+    var y = message;
 }
 //Void Vs Never
 //We use void when the function does return but does not return a value. The typescript infers the return value as void.
 //We use void when the function does return but does not return a value.
-let z = (a, b) => {
-    let c = a + b;
+var z = function (a, b) {
+    var c = a + b;
 };
 //The never return type when the function does not return at all.
-let z = function infiniteLoop() {
+var z = function infiniteLoop() {
     while (true) { }
 };

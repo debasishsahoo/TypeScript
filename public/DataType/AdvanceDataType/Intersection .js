@@ -1,29 +1,29 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-let student1 = {
+var student1 = {
     studentCode: '1',
     division: '10',
     name: 'Rahul',
     age: 20,
 };
-let student2 = {
+var student2 = {
     studentCode: '1',
     division: '10',
     age: 20,
 };
-let student3 = {
+var student3 = {
     studentCode: '1',
     division: '10',
     name: 'rahul',
     age: 20,
 };
-let student4 = {
+var student4 = {
     studentCode: '1',
     division: '10',
     name: 'rahul',
     age: 20, //ERROR
 };
-let student5 = {
+var student5 = {
     studentCode: '1',
     division: '10',
     name: 'rahul',

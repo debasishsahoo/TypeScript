@@ -14,15 +14,15 @@
 // undefined &
 // NaN.
 //|| (OR)
-let a = 10;
-let b = 15;
+var a = 10;
+var b = 15;
 console.log(a > 5 || b > 5); //true
 console.log(a > 5 || b < 5); //true although the b < 5 is false
-let strVar = 'Hello';
-let numVar = 100;
+var strVar = 'Hello';
+var numVar = 100;
 console.log(strVar || numVar); //Hello
 console.log(numVar || strVar); //100
-let option1, option2, option3;
+var option1, option2, option3;
 console.log(option1 || option2 || option3 || 'Default'); //Default
 option3 = 'option3';
 console.log(option1 || option2 || option3 || 'Default'); //option3

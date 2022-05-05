@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-let Employee;
+var Employee;
 Employee = {
     firstname: 'Debasish',
     lastname: 'Sahoo',
@@ -8,13 +8,13 @@ Employee = {
     jobtitle: 'Complicated',
 };
 console.log('Employee:', Employee.firstname);
-let employee = {
+var employee = {
     firstName: 'John',
     lastName: 'Doe',
     age: 25,
     jobTitle: 'Web Developer',
 };
-let vacant;
+var vacant;
 vacant.firstName = 'John';
-let vacant = {};
+var vacant = {};
 console.log(vacant.toString());

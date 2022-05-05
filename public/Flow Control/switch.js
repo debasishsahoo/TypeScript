@@ -1,7 +1,7 @@
 "use strict";
-let val1 = 20;
-let val2 = 10;
-let operation = '-';
+var val1 = 20;
+var val2 = 10;
+var operation = '-';
 console.log('switch example');
 switch (operation) {
     case '+':
@@ -74,7 +74,7 @@ switch (operation) {
 }
 console.log('switch finished');
 //breaks from a switch
-let val = calculator(20, 10, '+');
+var val = calculator(20, 10, '+');
 console.log(val);
 function calculator(val1, val2, operation) {
     switch (operation) {
@@ -93,7 +93,7 @@ function calculator(val1, val2, operation) {
     }
 }
 //Grouping of Cases
-let options = '3';
+var options = '3';
 switch (options) {
     case '1':
     case '2':
@@ -113,7 +113,7 @@ switch (options) {
         console.log('Invalid');
 }
 //Strict Equality Check
-let options = 3;
+var options = 3;
 switch (options) {
     case '1':
         console.log('1');
@@ -130,7 +130,7 @@ switch (options) {
     default:
         console.log('Invalid');
 }
-let options = 3;
+var options = 3;
 switch (options) {
     case a:
         console.log('1');
@@ -175,7 +175,7 @@ var VehcileType;
     VehcileType[VehcileType["Plane"] = 1] = "Plane";
     VehcileType[VehcileType["Train"] = 2] = "Train"; //2
 })(VehcileType || (VehcileType = {}));
-let num = VehcileType.Plane;
+var num = VehcileType.Plane;
 switch (+num) {
     case VehcileType.Car:
         console.log("Car");
