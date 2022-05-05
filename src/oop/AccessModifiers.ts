@@ -2,26 +2,63 @@
 //Protected
 //Public ->Any one can Access
 
-class Person {
-  protected VoterId: string;
-  private FirstName: string;
-  private LastName: string;
+// Access Modifier|	Accessible within class|	Accessible in subclass|	Accessible externally via class instance
+// Public	               Yes	                         Yes                  	Yes
+// Protected	           Yes	                         Yes	                  No
+// Private	             Yes                           No	                    No
 
-  constructor(id: string, firstName: string, lastName: string) {
-    this.VoterId = id;
-    this.FirstName = firstName;
-    this.LastName = lastName;
-  }
-
-  public GetFullName(): string {
-    return `${this.FirstName}  ${this.LastName}`;
-  }
-  public GetID(): string {
-    return `${this.VoterId}`;
+//Public
+//In TypeScript by default, all the members (properties and methods) of a class are public. So, there is no need to prefix members with this keyword. We can access this data member anywhere without any restriction.
+export {};
+class Student1 {
+  public studCode: number;
+  studName: string;
+  constructor(code: number, name: string) {
+    this.studCode = code;
+    this.studName = name;
   }
 }
+let stud: Student1 = new Student1(101, 'Debasish Sahoo');
+console.log(stud.studCode + ' ' + stud.studName);
 
-let person = new Person('A7455BZ', 'Abdul', 'AZIM');
-console.log('person:', person);
+//Private
+//The private access modifier cannot be accessible outside of its containing class. It ensures that the class members are visible only to that class in which it is containing.
 
-console.log('person:', person.GetID());
+class Student2 {
+  public studCode: number;
+  private studName: string;
+  constructor(code: number, name: string) {
+    this.studCode = code;
+    this.studName = name;
+  }
+  public display() {
+    return `My unique code: ${this.studCode}, my name: ${this.studName}.`;
+  }
+}
+let student: Student2 = new Student2(1, 'Debasish');
+console.log(student.display());
+
+//Protected
+class Student3 {
+  public studCode: number;
+  protected studName: string;
+  constructor(code: number, name: string) {
+    this.studCode = code;
+    this.studName = name;
+  }
+}
+class Person extends Student3 {
+  private department: string;
+
+  constructor(code: number, name: string, department: string) {
+    super(code, name);
+    this.department = department;
+  }
+  public getElevatorPitch() {
+    return `My unique code: ${this.studCode}, my name: ${this.studName} and I am in ${this.department} Branch.`;
+  }
+}
+let joeRoot: Person = new Person(1, 'Debasish Sahoo', 'CS');
+console.log(joeRoot.getElevatorPitch());
+
+//Readonly Modifier
