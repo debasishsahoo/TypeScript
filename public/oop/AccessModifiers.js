@@ -42,4 +42,3 @@ class Person extends Student3 {
 }
 let joeRoot = new Person(1, 'Debasish Sahoo', 'CS');
 console.log(joeRoot.getElevatorPitch());
-//Readonly Modifier
