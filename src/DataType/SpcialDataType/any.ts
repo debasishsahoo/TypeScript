@@ -1,4 +1,5 @@
 export {};
+//Any means Any Kind of data type
 let something: any = 'Hello World!';
 something = 23;
 something = true;

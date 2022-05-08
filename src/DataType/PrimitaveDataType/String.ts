@@ -108,7 +108,7 @@ let ax1: number = 1;
 let bx1: number = 2;
 console.log(`The addion of ${ax1} + ${bx1} is ${ax1 + bx1}`);
 
-let m = 11;
+let m = 10;
 console.log(`The m is ${m == 10 ? 'ten' : 'not ten'}`);
 
 const MAX = 100;
@@ -148,9 +148,9 @@ function hi(strings: TemplateStringsArray, name: string) {
   return 'Hi';
 }
 
-console.log(`${msg} world`);
+//console.log(`${msg} world`);
 
-console.log(hi`${msg}world`);
+console.log(hi`${msg}Hello`);
 
 //Parameters to Tagged Function
 
@@ -180,17 +180,18 @@ console.log(say`Welcome, ${firstName} ${lastName}. Learn ${topic} here`);
 function say1(strings: TemplateStringsArray, ...expr: string[]) {
   console.log(strings);
   console.log(expr);
-
   return '';
 }
 
-console.log(say1`Welcome, ${firstName} ${lastName}. Learn ${topic} here`);
+say1`Welcome, ${firstName} ${lastName}. Learn ${topic} here`;
 
 function say2(strings: TemplateStringsArray, ...expr: string[]) {
   let str = '';
+
   strings.forEach((string, i) => {
     str += string + (expr[i] || '');
   });
+  
   return str;
 }
 

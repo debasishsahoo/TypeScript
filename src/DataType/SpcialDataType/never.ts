@@ -7,9 +7,10 @@ function SayHi(): void {
 
 let speech: void = SayHi();
 console.log('speech:', speech);
+
 //Characteristics of Never
 
-let neverVar: never;
+let n1: never;
 
 let v1: any;
 let v2: number;
@@ -17,18 +18,18 @@ let v3: string;
 let v4: boolean;
 let v5: {};
 
-v1 = neverVar;
-v2 = neverVar;
-v3 = neverVar;
-v4 = neverVar;
-v5 = neverVar;
+v1 = n1;
+v2 = n1;
+v3 = n1;
+v4 = n1;
+v5 = n1;
 
 //The following results in an error
-neverVar = v1;
-neverVar = v2;
-neverVar = v3;
-neverVar = v4;
-neverVar = v5;
+n1 = v1;
+n1 = v2;
+n1 = v3;
+n1 = v4;
+n1 = v5;
 
 //The Typescript infers the return type as never if a function expression or arrow function.
 
