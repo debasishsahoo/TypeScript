@@ -62,8 +62,9 @@ let str3: string = 'TypeScript';
 console.log(str3.indexOf('T'));
 console.log(str3.indexOf('p'));
 console.log(str3.indexOf('e'));
-console.log(str3.indexOf('T', 1));
-console.log(str3.indexOf('t', 1));
+console.log(str3.indexOf('T', 3));
+
+console.log(str3.indexOf('t', 3));
 
 let strValue = 'This is a primitive string. But is has properties & methods';
 let pos = strValue.indexOf('primitive');
@@ -142,13 +143,15 @@ console.log('${}');
 
 //Tagged Template
 
-let msg: string = 'Hello';
+let msg: string = 'Hello Debassis';
 
 function hi(strings: TemplateStringsArray, name: string) {
+  console.log('name:', name);
+  console.log('strings:', strings);
   return 'Hi';
 }
 
-//console.log(`${msg} world`);
+console.log(`${msg} world`);
 
 console.log(hi`${msg}Hello`);
 
@@ -191,7 +194,7 @@ function say2(strings: TemplateStringsArray, ...expr: string[]) {
   strings.forEach((string, i) => {
     str += string + (expr[i] || '');
   });
-  
+
   return str;
 }
 

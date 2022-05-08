@@ -12,14 +12,14 @@ function foo1(x?: string) {
 foo1();
 
 function foo2(x: undefined) {
-  console.log(x); //undefined
+  console.log(x);
 }
 foo2();
 
 //Non-existing array elements
 const cars: string[] = ['Saab', 'Volvo', 'BMW'];
 
-console.log(cars[5]);
+console.log(cars[3]);
 
 //Explicitly set to undefined
 let myVar = undefined;

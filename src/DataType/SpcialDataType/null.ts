@@ -14,6 +14,7 @@ console.log(person('Debasish Sahoo', null));
 
 //Null Data Type
 let NullVarible: null;
+
 console.log(NullVarible);
 
 NullVarible = null;
@@ -126,7 +127,7 @@ let e5: Employee = {
 let e6: Employee | null | undefined = null;
 
 //Marking Property & Parameter Optional
-
+//?  ->null coullesing  operator
 interface Employee2 {
   employeecode: number;
   name?: string;

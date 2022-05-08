@@ -15,8 +15,8 @@ unknownVar = Symbol('key'); // Symbol
 
 let value: unknown;
 
-let value1: unknown = value; // OK
-let value2: any = value; // OK
+let valuex: unknown = value; // OK
+let valuey: any = value; // OK
 
 value1: boolean = value; // Error
 value2: number = value; // Error
