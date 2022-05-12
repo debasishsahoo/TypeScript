@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+//Any means Any Kind of data type
 var something = 'Hello World!';
 something = 23;
 something = true;

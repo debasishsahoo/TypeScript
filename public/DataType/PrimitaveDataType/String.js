@@ -45,8 +45,8 @@ var str3 = 'TypeScript';
 console.log(str3.indexOf('T'));
 console.log(str3.indexOf('p'));
 console.log(str3.indexOf('e'));
-console.log(str3.indexOf('T', 1));
-console.log(str3.indexOf('t', 1));
+console.log(str3.indexOf('T', 3));
+console.log(str3.indexOf('t', 3));
 var strValue = 'This is a primitive string. But is has properties & methods';
 var pos = strValue.indexOf('primitive');
 console.log(pos);
@@ -74,7 +74,7 @@ console.log('HELLO TYPESCRIPT'.toLowerCase());
 var ax1 = 1;
 var bx1 = 2;
 console.log("The addion of ".concat(ax1, " + ").concat(bx1, " is ").concat(ax1 + bx1));
-var m = 11;
+var m = 10;
 console.log("The m is ".concat(m == 10 ? 'ten' : 'not ten'));
 var MAX = 100;
 function doSomeWork(argument) {
@@ -95,12 +95,14 @@ console.log('${');
 console.log('${');
 console.log('${}');
 //Tagged Template
-var msg = 'Hello';
+var msg = 'Hello Debassis';
 function hi(strings, name) {
+    console.log('name:', name);
+    console.log('strings:', strings);
     return 'Hi';
 }
 console.log("".concat(msg, " world"));
-console.log(hi(__makeTemplateObject(["", "world"], ["", "world"]), msg));
+console.log(hi(__makeTemplateObject(["", "Hello"], ["", "Hello"]), msg));
 //Parameters to Tagged Function
 var firstName = 'Sachin';
 var lastName = 'Tendulkar';
@@ -125,7 +127,7 @@ function say1(strings) {
     console.log(expr);
     return '';
 }
-console.log(say1(__makeTemplateObject(["Welcome, ", " ", ". Learn ", " here"], ["Welcome, ", " ", ". Learn ", " here"]), firstName, lastName, topic));
+say1(__makeTemplateObject(["Welcome, ", " ", ". Learn ", " here"], ["Welcome, ", " ", ". Learn ", " here"]), firstName, lastName, topic);
 function say2(strings) {
     var expr = [];
     for (var _i = 1; _i < arguments.length; _i++) {

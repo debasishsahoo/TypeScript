@@ -5,7 +5,12 @@ var num3 = 223;
 var num4 = 57;
 var bigNumber = 9007199254740991n;
 var NumberValue = 0;
+//A new Number Objaect Is created
 var numberObj = new Number(1500);
+console.log(typeof numberObj);
+var numberObj2 = new Number('1500');
+console.log('numberObj2:', typeof numberObj2);
+var numberObj3 = new Number('1500');
 //NumberValue = numberObj;
 console.log('num1:', num1);
 console.log('num2:', num2);
@@ -93,6 +98,7 @@ console.log(0.1 + 0.2 == 0.3);
 console.log(0.1 + 0.2 === 0.30000000000000004);
 //abc() is abslute function
 function numberEquals(x, y) {
+    console.log(Math.abs(x - y));
     return Math.abs(x - y) < Number.EPSILON;
 }
 //0.30000000000000004-0.3=0.00000000000000004

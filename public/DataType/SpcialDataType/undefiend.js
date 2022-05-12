@@ -10,12 +10,12 @@ function foo1(x) {
 }
 foo1();
 function foo2(x) {
-    console.log(x); //undefined
+    console.log(x);
 }
 foo2();
 //Non-existing array elements
 var cars = ['Saab', 'Volvo', 'BMW'];
-console.log(cars[5]);
+console.log(cars[3]);
 //Explicitly set to undefined
 var myVar = undefined;
 console.log('myVar:', myVar);

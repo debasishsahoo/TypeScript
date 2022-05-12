@@ -32,22 +32,22 @@ boolvar = Boolean(NaN);
 console.log(boolvar);
 var boolvar1;
 boolvar1 = Boolean(true);
-console.log(boolvar);
+console.log(boolvar1);
 boolvar1 = Boolean('test');
-console.log(boolvar);
+console.log(boolvar1);
 boolvar1 = Boolean('0');
-console.log(boolvar);
+console.log(boolvar1);
 boolvar1 = Boolean('false');
-console.log(boolvar);
+console.log(boolvar1);
 boolvar1 = Boolean(100);
-console.log(boolvar);
+console.log(boolvar1);
 boolvar1 = Boolean({});
-console.log(boolvar);
+console.log(boolvar1);
 var employee1 = { name: 'test' };
 boolvar1 = Boolean(employee1);
-console.log(boolvar);
+console.log(boolvar1);
 boolvar1 = Boolean([]);
-console.log(boolvar);
+console.log(boolvar1);
 boolvar1 = Boolean(new Date());
 console.log(boolvar);
 boolvar1 = Boolean(Infinity);
@@ -62,6 +62,7 @@ console.log(typeof boolobj);
 console.log(boolobj.valueOf());
 console.log(typeof boolobj.valueOf());
 //Boolean vs boolean*
+//GLOBAL FUNCTION  Boolean(),Number(),String(),
 var b1 = new Boolean(false);
 console.log(b1.valueOf()); //false
 if (b1) {

@@ -6,6 +6,16 @@ function SayHi(): void {
   console.log('HI');
 }
 
+
+
+
+
+
+
+
+
+
+
 let speech: void = SayHi();
 console.log('speech:', speech);
 

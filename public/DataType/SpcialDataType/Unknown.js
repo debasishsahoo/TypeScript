@@ -13,8 +13,8 @@ unknownVar = null; // null
 unknownVar = undefined; // undefined
 unknownVar = Symbol('key'); // Symbol
 var value;
-var value1 = value; // OK
-var value2 = value; // OK
+var valuex = value; // OK
+var valuey = value; // OK
 value1: boolean = value; // Error
 value2: number = value; // Error
 var value3 = value; // Error
