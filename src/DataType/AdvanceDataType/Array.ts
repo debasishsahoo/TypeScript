@@ -1,11 +1,15 @@
+export{}
 let list1: number[] = [1, 2, 3];
 console.log('list1:', list1.length);
+
 
 let list2: Array<number> = [1, 2, 3];
 console.log(
   'list2:',
   list2.map((e) => e * 2)
 );
+
+
 
 let Skills: string[] = ['VUE'];
 

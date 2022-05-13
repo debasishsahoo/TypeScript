@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var list1 = [1, 2, 3];
 console.log('list1:', list1.length);
 var list2 = [1, 2, 3];
