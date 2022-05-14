@@ -3,12 +3,16 @@ let list1: number[] = [1, 2, 3];
 console.log('list1:', list1.length);
 
 
+
+
+
+
+
 let list2: Array<number> = [1, 2, 3];
 console.log(
   'list2:',
   list2.map((e) => e * 2)
 );
-
 
 
 let Skills: string[] = ['VUE'];
@@ -30,6 +34,8 @@ fruits = ['Apple', 'Orange', 'Banana'];
 let ids: Array<number>;
 
 ids = [23, 34, 100, 124, 44];
+
+let list3: Array<number|string> = [1, 2, 3,'a'];
 
 let values1: (number | string)[] = ['Apple', 2, 'Orange', 3, 4, 'Banana'];
 
