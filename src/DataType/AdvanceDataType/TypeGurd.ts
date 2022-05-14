@@ -15,6 +15,11 @@ function formatAmount2(money: number | string) {
     formattedAmount = 'Rs. ' + money;
   }
 
+
+
+
+
+  
   console.log(formattedAmount);
   return formattedAmount;
 }

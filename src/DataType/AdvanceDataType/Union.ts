@@ -1,6 +1,6 @@
 //Union Types in Typescript allows a variable to have the ability to store a value of several types. We define union types by using a pipe (|) to separate each of the possible types. Hence, number | string | boolean is the type of a variable, which can have the value that can be a number, a string, or a boolean.
 export {};
-let a: number | string;
+let a: number | string;  
 
 a = 1;
 console.log(typeof a); //number
