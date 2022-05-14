@@ -1,5 +1,6 @@
-let apps = ['C#', 'Java', 'C++'];
-let ProgramingLangugae = [];
+export {};
+let apps: string[] = ['C#', 'Java', 'C++'];
+let ProgramingLangugae: string[] = [];
 
 apps.forEach(function (item) {
   ProgramingLangugae.push(item);

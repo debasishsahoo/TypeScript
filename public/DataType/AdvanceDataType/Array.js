@@ -15,6 +15,7 @@ var fruits;
 fruits = ['Apple', 'Orange', 'Banana'];
 var ids;
 ids = [23, 34, 100, 124, 44];
+var list3 = [1, 2, 3, 'a'];
 var values1 = ['Apple', 2, 'Orange', 3, 4, 'Banana'];
 var values2 = [
     'Apple',

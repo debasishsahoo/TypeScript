@@ -141,8 +141,8 @@ function say2(strings) {
 }
 console.log(say2(__makeTemplateObject(["Welcome, ", " ", ". Learn ", " here"], ["Welcome, ", " ", ". Learn ", " here"]), firstName, lastName, topic));
 //Raw strings
-var filePath = "C:Developmentprofileaboutme.html";
-console.log("The file was uploaded from: ".concat(filePath));
+var filePath = "C:Development\\profileaboutme.html";
+console.log("uploaded from: ".concat(filePath));
 function tag(strings) {
     console.log(strings.raw);
     console.log(strings);
@@ -180,15 +180,19 @@ console.log(parseInt('0o51'));
 console.log(parseInt('3.125e7'));
 console.log(parseInt('35 35'));
 console.log(parseInt('AB 35'));
+//decimal to Ocatal & Hex
 console.log(parseInt('51'));
 console.log(parseInt('51', 8));
 console.log(parseInt('51', 16));
+//Ocatal to Ocatal & Hex
 console.log(parseInt('051'));
 console.log(parseInt('051', 8));
 console.log(parseInt('051', 16));
+//hex to Ocatal & Hex
 console.log(parseInt('0x51'));
 console.log(parseInt('0x51', 8));
 console.log(parseInt('0x51', 16));
+//Binary to Ocatal & Hex
 console.log(parseInt('0o51'));
 console.log(parseInt('0o51', 8));
 console.log(parseInt('0o51', 16));

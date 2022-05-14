@@ -1,11 +1,11 @@
 "use strict";
 var empId = 1;
 var empName = 'Sagnik';
-var employee = [empId, empName];
+var employee, manger, superlol = [empId, empName];
 //RGB
 var Color = [255, 0, 0];
 //optional parameter [?]
-var BGCOLOR, HEADERCOLOR;
+var BGCOLOR, HEADERCOLOR, hdgfgll;
 BGCOLOR = [0, 255, 255, 0.5];
 HEADERCOLOR = [0, 255, 0];
 //Tuple Array
