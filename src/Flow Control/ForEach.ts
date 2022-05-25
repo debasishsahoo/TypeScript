@@ -1,8 +1,10 @@
 export {};
-let apps: string[] = ['C#', 'Java', 'C++'];
+let apps: string[] = ['C#', 'Java', 'C++', 'Ruby'];
+
 let ProgramingLangugae: string[] = [];
 
 apps.forEach(function (item) {
+  console.log(item);
   ProgramingLangugae.push(item);
 });
 

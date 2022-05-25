@@ -9,10 +9,10 @@ console.log(selecteditem);
 //Difference with ||
 var email1;
 var selecteditem1 = email1 || 'No Email Selected';
-console.log(selecteditem1); //No Email Selected
+console.log(selecteditem1);
 email = 'mail@example.com';
 selecteditem = email || 'No Email Selected';
-console.log(selecteditem); //"mail@example.com"
+console.log(selecteditem);
 email = '';
 selecteditem = email || 'No Email Selected';
 console.log(selecteditem); //No Email Selected

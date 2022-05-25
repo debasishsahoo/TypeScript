@@ -42,8 +42,8 @@ function check1(a: number, b: number) {
 }
 
 check1(10, 10); //a is equal to b
-check1(11, 10); //a is greater than b
-check1(10, 11); //b is greater than a
+//check1(11, 10); //a is greater than b
+//check1(10, 11); //b is greater than a
 
 function check2(a: number, b: number) {
   let c: string;

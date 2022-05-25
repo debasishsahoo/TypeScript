@@ -1,20 +1,19 @@
 export {};
 //let email:string;
-//let email: string = 'mail@example.com';
+let email: string = 'mail@example.com';
 //let email = '';
-let email = '0';
+//let email = '0';
 let selecteditem = email ?? 'No Email Selected';
 console.log(selecteditem);
-
 //Difference with ||
 
 let email1;
 let selecteditem1 = email1 || 'No Email Selected';
-console.log(selecteditem1); //No Email Selected
+console.log(selecteditem1); 
 
 email = 'mail@example.com';
 selecteditem = email || 'No Email Selected';
-console.log(selecteditem); //"mail@example.com"
+console.log(selecteditem); 
 
 email = '';
 selecteditem = email || 'No Email Selected';
