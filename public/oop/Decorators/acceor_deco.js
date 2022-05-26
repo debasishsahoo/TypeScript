@@ -11,34 +11,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 // Either the constructor function of the class for a static member or the prototype of the class for an instance member.
 // The member name.
 // The Property Descriptor for the member.
-var Employee = /** @class */ (function () {
-    function Employee() {
+class Employee {
+    get salary() {
+        return 'Rs. ${this._salary}';
     }
-    Object.defineProperty(Employee.prototype, "salary", {
-        get: function () {
-            return 'Rs. ${this._salary}';
-        },
-        set: function (salary) {
-            this._salary = +salary;
-        },
-        enumerable: false,
-        configurable: true
-    });
-    Object.defineProperty(Employee.prototype, "name", {
-        get: function () {
-            return 'Sir/Madam, ${this._name}';
-        },
-        set: function (name) {
-            this._name = name;
-        },
-        enumerable: false,
-        configurable: true
-    });
-    __decorate([
-        configurable(false)
-    ], Employee.prototype, "salary", null);
-    __decorate([
-        configurable(true)
-    ], Employee.prototype, "name", null);
-    return Employee;
-}());
+    set salary(salary) {
+        this._salary = +salary;
+    }
+    get name() {
+        return 'Sir/Madam, ${this._name}';
+    }
+    set name(name) {
+        this._name = name;
+    }
+}
+__decorate([
+    configurable(false)
+], Employee.prototype, "salary", null);
+__decorate([
+    configurable(true)
+], Employee.prototype, "name", null);

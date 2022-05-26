@@ -19,7 +19,7 @@ var BasicSalary;
     BasicSalary[BasicSalary["PROJECTLEAD"] = 30000] = "PROJECTLEAD";
     BasicSalary[BasicSalary["PROGRAMMER"] = 15000] = "PROGRAMMER";
 })(BasicSalary || (BasicSalary = {}));
-var Emp1;
+let Emp1;
 console.log(BasicSalary.CEO);
 var Weekdays;
 (function (Weekdays) {

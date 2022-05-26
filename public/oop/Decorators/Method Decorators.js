@@ -10,18 +10,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 // Either the constructor function of the class for a static member or the prototype of the class for an instance member.
 // The member name.
 // The Property Descriptor for the member.
-var Item = /** @class */ (function () {
-    function Item() {
+class Item {
+    constructor() {
         this.itemArr = [];
     }
-    Item.prototype.Add = function (item) {
+    Add(item) {
         this.itemArr.push(item);
-    };
-    Item.prototype.GetAll = function () {
+    }
+    GetAll() {
         return this.itemArr;
-    };
-    __decorate([
-        log
-    ], Item.prototype, "Add", null);
-    return Item;
-}());
+    }
+}
+__decorate([
+    log
+], Item.prototype, "Add", null);

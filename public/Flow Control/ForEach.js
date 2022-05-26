@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var apps = ['C#', 'Java', 'C++', 'Ruby'];
-var ProgramingLangugae = [];
+let apps = ['C#', 'Java', 'C++', 'Ruby'];
+let ProgramingLangugae = [];
 apps.forEach(function (item) {
     console.log(item);
     ProgramingLangugae.push(item);

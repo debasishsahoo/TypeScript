@@ -7,15 +7,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 //Class Decorators
 //A class decorator is defined just before the class declaration, and it tells about the class behaviors. A class decorator is applied to the constructor of the class. A class decorator can be used to observe, modify, or replace a class definition. If the class decorator returns a value, it will replace the class declaration with the given constructor function.
-var Person = /** @class */ (function () {
-    function Person(message) {
+let Person = class Person {
+    constructor(message) {
         this.msg = message;
     }
-    Person.prototype.show = function () {
+    show() {
         return 'Hello, ' + this.msg;
-    };
-    Person = __decorate([
-        sealed
-    ], Person);
-    return Person;
-}());
+    }
+};
+Person = __decorate([
+    sealed
+], Person);

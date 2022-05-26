@@ -2,8 +2,8 @@
 function getArray(items) {
     return new Array().concat(items);
 }
-var myNumArr = getArray([100, 200, 300]);
-var myStrArr = getArray(['Hello', 'World']);
+let myNumArr = getArray([100, 200, 300]);
+let myStrArr = getArray(['Hello', 'World']);
 myNumArr.push(400);
 myStrArr.push('Hello TypeScript');
 myNumArr.push('Hi');
@@ -13,8 +13,8 @@ console.log(myStrArr);
 function getArray1(items) {
     return new Array().concat(items);
 }
-var myNumArr1 = getArray1([100, 200, 300]);
-var myStrArr1 = getArray1(['Hello', 'World']);
+let myNumArr1 = getArray1([100, 200, 300]);
+let myStrArr1 = getArray1(['Hello', 'World']);
 myNumArr1.push(400); // OK
 myStrArr1.push('Hello TypeScript'); // OK
 myNumArr1.push('Hi'); // Compiler Error
@@ -43,15 +43,14 @@ function displayNames(names) {
 }
 displayNames(['Steve', 'Bill']); // Steve, Bill
 //Constraints
-var Person = /** @class */ (function () {
-    function Person(fname, lname) {
+class Person {
+    constructor(fname, lname) {
         this.firstName = fname;
         this.lastName = lname;
     }
-    return Person;
-}());
+}
 function display(per) {
-    console.log("".concat(per.firstName, " ").concat(per.lastName));
+    console.log(`${per.firstName} ${per.lastName}`);
 }
 var per = new Person('Bill', 'Gates');
 display(per); //Output: Bill Gates

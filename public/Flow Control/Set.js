@@ -1,5 +1,5 @@
 "use strict";
-var studentEntries = new Set();
+let studentEntries = new Set();
 //Add Values
 studentEntries.add('Dinda');
 studentEntries.add('Reshmi');
@@ -24,12 +24,11 @@ studentEntries.add('Signik').add('Rup').add('Arnab').add('Kunal');
 //Returns Set data
 console.log('The List of Set values:');
 console.log(studentEntries);
-var diceEntries = new Set();
+let diceEntries = new Set();
 diceEntries.add(1).add(2).add(3).add(4).add(5).add(6);
 //Iterate over set entries
 console.log('Dice Entries are:');
-for (var _i = 0, diceEntries_1 = diceEntries; _i < diceEntries_1.length; _i++) {
-    var diceNumber = diceEntries_1[_i];
+for (let diceNumber of diceEntries) {
     console.log(diceNumber);
 }
 // Iterate set entries with forEach

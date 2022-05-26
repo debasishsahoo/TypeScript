@@ -1,23 +1,23 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var list1 = [1, 2, 3];
+let list1 = [1, 2, 3];
 console.log('list1:', list1.length);
-var list2 = [1, 2, 3];
-console.log('list2:', list2.map(function (e) { return e * 2; }));
-var Skills = ['VUE'];
+let list2 = [1, 2, 3];
+console.log('list2:', list2.map((e) => e * 2));
+let Skills = ['VUE'];
 Skills[0] = 'Angular';
 Skills[1] = 'React';
 Skills.push('NODEJS');
 console.log('Skills:', Skills);
 Skills.pop();
 console.log('Skills:', Skills);
-var fruits;
+let fruits;
 fruits = ['Apple', 'Orange', 'Banana'];
-var ids;
+let ids;
 ids = [23, 34, 100, 124, 44];
-var list3 = [1, 2, 3, 'a'];
-var values1 = ['Apple', 2, 'Orange', 3, 4, 'Banana'];
-var values2 = [
+let list3 = [1, 2, 3, 'a'];
+let values1 = ['Apple', 2, 'Orange', 3, 4, 'Banana'];
+let values2 = [
     'Apple',
     'PineApple',
     2,
@@ -26,7 +26,7 @@ var values2 = [
     4,
     'Banana',
 ];
-var Values3 = [1, 2, 3, 4, 'Apple', 6];
+let Values3 = [1, 2, 3, 4, 'Apple', 6];
 //Access Array Elements
 console.log(fruits[0]);
 console.log(fruits[1]);

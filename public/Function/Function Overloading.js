@@ -18,24 +18,24 @@ function display(a, b) {
 display('deb', 'sahoo');
 display(5, 9);
 function grettings(person) {
-    return "Hello, ".concat(person);
+    return `Hello, ${person}`;
 }
-var xh1 = grettings('World');
+let xh1 = grettings('World');
 console.log('xh1:', xh1);
 function grettings(person) {
-    return "Hello, ".concat(person);
+    return `Hello, ${person}`;
 }
-var xh1 = grettings('World');
+let xh1 = grettings('World');
 console.log('xh1:', xh1);
 function greet(person) {
     if (typeof person === 'string') {
-        return "Hello ".concat(person);
+        return `Hello ${person}`;
     }
     else if (Array.isArray(person)) {
-        return person.map(function (name) { return "Hello ".concat(person); });
+        return person.map((name) => `Hello ${person}`);
     }
     else if (typeof person === 'number') {
         return person;
     }
-    throw new Error("Unable to Greet");
+    throw new Error(`Unable to Greet`);
 }

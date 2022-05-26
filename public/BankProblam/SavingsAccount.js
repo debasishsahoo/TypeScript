@@ -1,48 +1,30 @@
 "use strict";
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        if (typeof b !== "function" && b !== null)
-            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var Account_abstract_1 = __importDefault(require("./Account.abstract"));
-var SavingsAccount = /** @class */ (function (_super) {
-    __extends(SavingsAccount, _super);
-    function SavingsAccount(memberId, startingBalance) {
-        var _this = _super.call(this, memberId, startingBalance) || this;
-        _this._percentInterestGrowth = 3;
-        _this._maxMonthlyWithdrawals = 3;
-        _this._currentMonthlyWithdrawls = 0;
-        return _this;
+const Account_abstract_1 = __importDefault(require("./Account.abstract"));
+class SavingsAccount extends Account_abstract_1.default {
+    constructor(memberId, startingBalance) {
+        super(memberId, startingBalance);
+        this._percentInterestGrowth = 3;
+        this._maxMonthlyWithdrawals = 3;
+        this._currentMonthlyWithdrawls = 0;
     }
-    SavingsAccount.prototype.addMonthlyInterestGrowth = function () {
+    addMonthlyInterestGrowth() {
         this._balance += this._balance * (this._percentInterestGrowth / 100);
-    };
-    SavingsAccount.prototype.withdraw = function (amount) {
+    }
+    withdraw(amount) {
         if (this._currentMonthlyWithdrawls === this._maxMonthlyWithdrawals) {
-            console.log("Max monthly withdrawal limit has been reached, Please wait until next month.");
+            console.log(`Max monthly withdrawal limit has been reached, Please wait until next month.`);
             return;
         }
         if (amount > this._balance) {
-            console.log("Insufficient funds!");
+            console.log(`Insufficient funds!`);
             return;
         }
         this._balance -= amount;
         this._currentMonthlyWithdrawls++;
-    };
-    return SavingsAccount;
-}(Account_abstract_1.default));
+    }
+}
 exports.default = SavingsAccount;

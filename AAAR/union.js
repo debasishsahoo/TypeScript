@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var a;
+let a;
 function sayhi(arg) {
     return 10;
 }

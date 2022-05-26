@@ -1,7 +1,7 @@
 "use strict";
 //TypeScript Date Object
 //1. new Date(): It creates a new date object with the current date and time.
-var date = new Date();
+let date = new Date();
 console.log('Date = ' + date);
 //2.new Date(milliseconds): It creates a new date object as zero time plus milliseconds.
 date = new Date(500000000000);
@@ -10,7 +10,7 @@ console.log('Date = ' + date);
 date = new Date('2019-01-16');
 console.log('Date = ' + date);
 //4. new Date ( year, month, date[, hour, minute, second, millisecond ]): It creates a new date object with a specified date and time.
-date = new Date(2018, 5, 5, 17, 23, 42, 11);
+date = new Date(2018, 0o5, 0o5, 17, 23, 42, 11);
 console.log('Date = ' + date);
 date = new Date(2017, 4, 4, 17, 23, 42, 11);
 date.setDate(13);

@@ -9,15 +9,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 // The expression for the property decorator function accepts two arguments. They are:
 // Either the constructor function of the class for a static member or the prototype of the class for an instance member.
 // The member name.
-var Company = /** @class */ (function () {
-    function Company() {
+class Company {
+    constructor() {
         this.name = 'google.com';
     }
-    __decorate([
-        ReadOnly
-    ], Company.prototype, "name", void 0);
-    return Company;
-}());
-var comp = new Company();
+}
+__decorate([
+    ReadOnly
+], Company.prototype, "name", void 0);
+let comp = new Company();
 comp.name = 'SSSIT.com'; // Here, we can't change company name.
 console.log(comp.name); // 'google.com'

@@ -2,25 +2,25 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 //Where String is parameter datatype and void is the return type
 //Assigning to void
-var a;
+let a;
 a = undefined;
 a: void ;
 a = "test";
 a: undefined;
-var b;
+let b;
 b = a;
 a = b;
-var f1 = function () {
+const f1 = () => {
     return 10;
 };
-var f2 = function () { return true; };
-var f3 = function () {
+const f2 = () => true;
+const f3 = function () {
     return "Hello";
 };
 //v1, v2 & v3 are of type void
-var v1 = f1();
-var v2 = f2();
-var v3 = f3();
+const v1 = f1();
+const v2 = f2();
+const v3 = f3();
 console.log(v1); //10
 console.log(v2); //true
 console.log(v3); //hello
@@ -28,7 +28,7 @@ console.log(v3); //hello
 v1 + 10; //not ok   
 //Operator '+' cannot be applied to types 'void' and 'number'
 v1 + 10; //not ok    
-var f1 = function () {
+const f1 = () => {
     return 10;
 };
 function log(x) {
@@ -40,11 +40,11 @@ log('Sahoo');
 log(true);
 log(undefined);
 //public static void main() this main function return nothing
-var useless = undefined;
+let useless = undefined;
 //useless = 1;
 console.log('useless:', useless);
-var a;
-var b;
+let a;
+let b;
 a = undefined;
 a = 'test';
 b = a; //ok

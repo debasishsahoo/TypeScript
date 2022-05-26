@@ -26,8 +26,8 @@ function Compare(a, b) {
     //<T> denotes As Type
     return a == b;
 }
-var output1 = Compare('Deb', 'Sahoo');
-var output2 = Compare(5, 6);
-var output3 = Compare(5.5, 6.8);
-var output4 = Compare(5.0, 5);
-var output5 = Compare('5.0', 5);
+let output1 = Compare('Deb', 'Sahoo');
+let output2 = Compare(5, 6);
+let output3 = Compare(5.5, 6.8);
+let output4 = Compare(5.0, 5);
+let output5 = Compare('5.0', 5);

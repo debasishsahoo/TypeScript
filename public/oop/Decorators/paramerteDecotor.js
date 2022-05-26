@@ -14,16 +14,15 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 // Either the constructor function of the class for a static member or the prototype of the class for an instance member.
 // The member name.
 // The index of the parameter in the function?s arguments list.
-var Person = /** @class */ (function () {
-    function Person(message) {
+class Person {
+    constructor(message) {
         this.msg = message;
     }
-    Person.prototype.show = function (name) {
+    show(name) {
         return 'Hello ' + name + ', ' + this.msg;
-    };
-    __decorate([
-        validate,
-        __param(0, required)
-    ], Person.prototype, "show", null);
-    return Person;
-}());
+    }
+}
+__decorate([
+    validate,
+    __param(0, required)
+], Person.prototype, "show", null);

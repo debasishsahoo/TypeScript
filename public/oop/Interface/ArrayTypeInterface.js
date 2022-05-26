@@ -1,6 +1,6 @@
 "use strict";
 // use of the interface
-var myNames;
+let myNames;
 myNames = ['Virat', 'Rohit', 'Sachin'];
 var myAges;
 myAges = [10, 18, 25];

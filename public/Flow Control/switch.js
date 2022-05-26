@@ -9,7 +9,7 @@ var VehcileType;
     VehcileType[VehcileType["Plane"] = 1] = "Plane";
     VehcileType[VehcileType["Train"] = 2] = "Train";
 })(VehcileType || (VehcileType = {}));
-var num = VehcileType.Plane; //  ==    ===
+let num = VehcileType.Plane; //  ==    ===
 console.log('num:', num);
 switch (+num) {
     case VehcileType.Car:

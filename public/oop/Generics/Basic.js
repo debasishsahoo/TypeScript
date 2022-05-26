@@ -4,15 +4,15 @@ Object.defineProperty(exports, "__esModule", { value: true });
 function identity(arg) {
     return arg;
 }
-var output1 = identity('myString');
-var output2 = identity(100);
+let output1 = identity('myString');
+let output2 = identity(100);
 console.log(output1);
 console.log(output2);
 function getItems(items) {
     return new Array().concat(items);
 }
-var arrNumber = getItems([10, 20, 30]);
-var arrString = getItems(['Hello', 'google']);
+let arrNumber = getItems([10, 20, 30]);
+let arrString = getItems(['Hello', 'google']);
 arrNumber.push(40); // Correct
 arrNumber.push('Hi! google'); // Compilation Error
 arrString.push('Hello TypeScript'); // Correct
@@ -30,28 +30,25 @@ function displayDataType2(id, name) {
 }
 displayDataType2(1, 'Abhishek');
 //Generics Classes
-var StudentInfo = /** @class */ (function () {
-    function StudentInfo() {
-    }
-    StudentInfo.prototype.setValue = function (id, name) {
+class StudentInfo {
+    setValue(id, name) {
         this.Id = id;
         this.Name = name;
-    };
-    StudentInfo.prototype.display = function () {
-        console.log("Id = ".concat(this.Id, ", Name = ").concat(this.Name));
-    };
-    return StudentInfo;
-}());
-var st = new StudentInfo();
+    }
+    display() {
+        console.log(`Id = ${this.Id}, Name = ${this.Name}`);
+    }
+}
+let st = new StudentInfo();
 st.setValue(101, 'Virat');
 st.display();
-var std = new StudentInfo();
+let std = new StudentInfo();
 std.setValue('201', 'Rohit');
 std.display();
 function printName(theInput) {
-    console.log("Name: ".concat(theInput.name, " \nAge: ").concat(theInput.age, " \nProfession: ").concat(theInput.profession));
+    console.log(`Name: ${theInput.name} \nAge: ${theInput.age} \nProfession: ${theInput.profession}`);
 }
-var player = {
+let player = {
     name: 'Rohit Sharma',
     age: 30,
     profession: 'Cricket Player',
@@ -60,7 +57,7 @@ printName(player);
 function studentData(id, value) {
     console.log('Id = ' + id + ', \nName = ' + value);
 }
-var studentInfo = studentData;
+let studentInfo = studentData;
 studentInfo(11, 'Rohit Sharma');
 function loggingIdentity(arg) {
     console.log('Length: ' + arg.length); // It has a .length property, so no more error found
@@ -69,15 +66,14 @@ function loggingIdentity(arg) {
 loggingIdentity({ length: 10, value: 9 });
 loggingIdentity(3); // Compilation Error, number doesn't have a .length property
 //Generic Constraints with class
-var Student = /** @class */ (function () {
-    function Student(id, name) {
+class Student {
+    constructor(id, name) {
         this.Id = id;
         this.Name = name;
     }
-    return Student;
-}());
-function display(per) {
-    console.log("".concat(st.Id, " ").concat(st.Name));
 }
-var st = new Student(101, '\nVirat Kohli');
+function display(per) {
+    console.log(`${st.Id} ${st.Name}`);
+}
+let st = new Student(101, '\nVirat Kohli');
 display(st);

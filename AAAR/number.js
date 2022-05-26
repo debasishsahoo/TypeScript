@@ -15,7 +15,7 @@ console.log(Math.pow(10, 1000));
 console.log(1 / 3);
 console.log(0.3333333333333333 * 3);
 //0.999999999999999
-var myNumber = 10.5679; //   f->10.5   c->11
+let myNumber = 10.5679; //   f->10.5   c->11
 console.log(myNumber.toPrecision(1));
 console.log(myNumber.toPrecision(2));
 console.log(myNumber.toPrecision(3));
@@ -24,4 +24,4 @@ console.log(myNumber.toPrecision(5));
 console.log(myNumber.toPrecision(6));
 console.log(myNumber.toPrecision(7));
 console.log(myNumber.toPrecision(8));
-var a1 = ;
+let a1 = ;

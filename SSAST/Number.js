@@ -23,10 +23,10 @@
 // }
 // console.log(NumberEqual(0.1 + 0.2, 0.3));
 // console.log(3 / 0);
-outerloop: for (var i_1 = 0; i_1 <= 24; i_1++) {
-    innerloop: for (var j_1 = 0; j_1 <= 60; j_1++) {
-        subinnerloop: for (var z_1 = 0; z_1 <= 60; z_1++) {
-            console.log(i_1, ':', j_1, ':', z_1);
+outerloop: for (let i = 0; i <= 24; i++) {
+    innerloop: for (let j = 0; j <= 60; j++) {
+        subinnerloop: for (let z = 0; z <= 60; z++) {
+            console.log(i, ':', j, ':', z);
         }
     }
 }

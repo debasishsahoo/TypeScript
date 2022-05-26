@@ -1,30 +1,29 @@
 "use strict";
 //Readonly Modifier
-var Company = /** @class */ (function () {
-    function Company(contName) {
+class Company {
+    constructor(contName) {
         this.country = 'India';
         this.name = contName;
     }
-    Company.prototype.showDetails = function () {
+    showDetails() {
         console.log(this.name + ' : ' + this.country);
-    };
-    return Company;
-}());
-var comp = new Company('JRA Solutions');
+    }
+}
+let comp = new Company('JRA Solutions');
 comp.showDetails(); // JRA Solutions : India
 comp.name = 'TCS';
-var empObj = {
+let empObj = {
     empCode: 1,
     empName: 'Steve',
 };
 empObj.empCode = 100;
-var emp1 = {
+let emp1 = {
     empCode1: 1,
     empName1: 'Steve',
 };
 emp1.empCode1 = 100; // Compiler Error: Cannot change readonly 'empCode'
 emp1.empName1 = 'Bill'; // Compiler Error: Cannot change readonly 'empName'
-var emp2 = {
+let emp2 = {
     empCode: 1,
     empName: 'Steve',
 };

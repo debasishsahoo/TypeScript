@@ -1,5 +1,5 @@
 "use strict";
-var empObject = {};
+let empObject = {};
 empObject.name = 'Abhishek';
 empObject.age = 25;
 empObject.gender = 'Male';

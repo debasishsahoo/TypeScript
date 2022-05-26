@@ -33,9 +33,9 @@ function AllowRestrictedArea(person) {
         return true;
     }
 }
-var employee = { type: "Employee", employeecode: 1, name: "Rahul" };
+let employee = { type: "Employee", employeecode: 1, name: "Rahul" };
 AllowRestrictedArea(employee);
-var vistor = { type: "Visitor", visitorcode: 1, name: "Sachin" };
+let vistor = { type: "Visitor", visitorcode: 1, name: "Sachin" };
 AllowRestrictedArea(vistor);
-var contractor = { type: "Contractor", contractorcode: 1, name: "Saurav" };
+let contractor = { type: "Contractor", contractorcode: 1, name: "Saurav" };
 AllowRestrictedArea(contractor);

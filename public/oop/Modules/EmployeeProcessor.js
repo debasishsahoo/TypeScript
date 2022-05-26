@@ -23,7 +23,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var Emp = __importStar(require("./Export"));
+const Emp = __importStar(require("./Export"));
 console.log(Emp.age);
-var empObj = new Emp.Employee('Bill Gates', 2);
+let empObj = new Emp.Employee('Bill Gates', 2);
 empObj.displayEmployee();

@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var customer = {
+let customer = {
     firstName: 'Ajay',
     lastName: 'Laddha',
-    sayHi: function () {
+    sayHi: () => {
         return 'Hi';
     },
 };
@@ -14,7 +14,7 @@ console.log(customer.lastName);
 var employee = {
     firstName: 'Vikas',
     lastName: 'Jainer',
-    sayHi: function () {
+    sayHi: () => {
         return 'Hello';
     },
 };

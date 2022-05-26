@@ -1,26 +1,25 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var Student = /** @class */ (function () {
+class Student {
     //constructor
-    function Student(ID, NAME) {
+    constructor(ID, NAME) {
         this.id = ID;
         this.name = NAME;
     }
     //Methods
-    Student.prototype.GetName = function () {
-        return "Name: ".concat(this.name);
-    };
-    Student.prototype.GetDetails = function (id) {
+    GetName() {
+        return `Name: ${this.name}`;
+    }
+    GetDetails(id) {
         if (id !== null) {
-            return "ID: ".concat(this.id, " and Name: ").concat(this.name);
+            return `ID: ${this.id} and Name: ${this.name}`;
         }
         else {
-            return "Please Send Any ID";
+            return `Please Send Any ID`;
         }
-    };
-    return Student;
-}());
-var obj = new Student(1, 'Sourav');
+    }
+}
+const obj = new Student(1, 'Sourav');
 console.log('obj:', obj);
 console.log('Name:', obj.GetName());
 console.log('Name:', obj.GetDetails(1));

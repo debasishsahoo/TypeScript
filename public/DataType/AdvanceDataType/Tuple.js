@@ -1,15 +1,15 @@
 "use strict";
-var empId = 1;
-var empName = 'Sagnik';
-var employee, manger, superlol = [empId, empName];
+let empId = 1;
+let empName = 'Sagnik';
+let employee, manger, superlol = [empId, empName];
 //RGB
-var Color = [255, 0, 0];
+let Color = [255, 0, 0];
 //optional parameter [?]
-var BGCOLOR, HEADERCOLOR, hdgfgll;
+let BGCOLOR, HEADERCOLOR, hdgfgll;
 BGCOLOR = [0, 255, 255, 0.5];
 HEADERCOLOR = [0, 255, 0];
 //Tuple Array
-var emp;
+let emp;
 emp = [
     [11, 'Sourav'],
     [200000, 'RUP'],

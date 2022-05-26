@@ -1,6 +1,6 @@
 "use strict";
-var OperatingSystem = function (type) {
+let OperatingSystem = (type) => {
     console.log('Android ' + type.name + ' has ' + type.language + ' language.');
 };
-var Oreo = { name: 'O', language: 'Java' };
+let Oreo = { name: 'O', language: 'Java' };
 OperatingSystem(Oreo);

@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 //Undefined is a primitive value that indicates that the value is not assigned. i.e. whenever we do not explicitly assign a value to a variable, TypeScript assigns the undefined value to it. It is an unintentional absence of any value.
 //Uninitialized variable
-var NumVar;
+let NumVar;
 console.log(NumVar);
 //Optional Function argument
 function foo1(x) {
@@ -14,13 +14,13 @@ function foo2(x) {
 }
 foo2();
 //Non-existing array elements
-var cars = ['Saab', 'Volvo', 'BMW'];
+const cars = ['Saab', 'Volvo', 'BMW'];
 console.log(cars[3]);
 //Explicitly set to undefined
-var myVar = undefined;
+let myVar = undefined;
 console.log('myVar:', myVar);
 //Undefined Type
-var num;
+let num;
 console.log(num);
 console.log(typeof num);
 //Global Undefined variable
@@ -35,12 +35,12 @@ function abc() {
     console.log(typeof undefined); //number
 }
 //Checking for undefined
-var a8;
+let a8;
 console.log(a8 === undefined); //true
 //Null & Undefined
-var a9;
+let a9;
 console.log(typeof a9 === 'undefined');
-var a10;
+let a10;
 console.log('a10:', a10);
 //loose equality check
 console.log(a10 == false); //false
@@ -48,7 +48,7 @@ console.log(a10 == true); //false
 //Strict equality check
 console.log(a10 === false); //false
 console.log(a10 === true);
-var a11 = 10;
-var b11;
+let a11 = 10;
+let b11;
 console.log(a11 + b11); //NaN
 console.log(Number(b11)); //NaN
