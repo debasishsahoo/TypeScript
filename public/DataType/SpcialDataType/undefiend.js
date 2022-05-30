@@ -39,6 +39,7 @@ let a8;
 console.log(a8 === undefined); //true
 //Null & Undefined
 let a9;
+console.log(typeof a9);
 console.log(typeof a9 === 'undefined');
 let a10;
 console.log('a10:', a10);

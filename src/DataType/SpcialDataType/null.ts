@@ -91,6 +91,11 @@ console.log(a7 == true); //false
 console.log(a7 === false); //false
 console.log(a7 === true);
 
+
+
+
+
+
 //StrictNullChecks
 interface Employee {
   employeecode: number;
@@ -100,14 +105,18 @@ interface Employee {
 let e1: Employee = {
   employeecode: 10,
   name: null,
+  age:19
 };
 
 let e2: Employee = {
-  employeecode: 10,
+  employeecode: 12,
   name: undefined,
 };
 
 let e3: Employee = null;
+
+
+
 
 interface Employee1 {
   employeecode: number;
@@ -119,12 +128,12 @@ let e4: Employee1 = {
   name: null,
 };
 
-let e5: Employee = {
+let e5: Employee1 = {
   employeecode: 10,
   name: undefined,
 };
 
-let e6: Employee | null | undefined = null;
+let e6: Employee1 | null | undefined = null;
 
 //Marking Property & Parameter Optional
 //?  ->null coullesing  operator
@@ -149,3 +158,17 @@ function getLength(s: string | null) {
   }
   return s.length;
 }
+
+interface Student{
+  name:string,
+  age:number, 
+  dob:Date,
+  address:string,
+  betch:string,
+
+}
+
+
+
+
+

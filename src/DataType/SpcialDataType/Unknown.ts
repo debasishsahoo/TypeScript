@@ -18,8 +18,8 @@ let value: unknown;
 let valuex: unknown = value; // OK
 let valuey: any = value; // OK
 
-value1: boolean = value; // Error
-value2: number = value; // Error
+let value1: boolean = value; // Error
+let value2: number = value; // Error
 let value3: string = value; // Error
 let value4: object = value; // Error
 let value5: any[] = value; // Error
@@ -60,3 +60,4 @@ if (typeof value =="string") {
 }
  
 //Unknown Vs Any
+let x:symbol=👍;

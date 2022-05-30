@@ -9,4 +9,8 @@ var StringUtility;
         return str.toLowerCase();
     }
     StringUtility.ToY = ToY;
+    function ToZ(str, from, length) {
+        return str.substr(from, length);
+    }
+    StringUtility.ToZ = ToZ;
 })(StringUtility || (StringUtility = {}));

@@ -15,8 +15,8 @@ unknownVar = Symbol('key'); // Symbol
 let value;
 let valuex = value; // OK
 let valuey = value; // OK
-value1: boolean = value; // Error
-value2: number = value; // Error
+let value1 = value; // Error
+let value2 = value; // Error
 let value3 = value; // Error
 let value4 = value; // Error
 let value5 = value; // Error
@@ -47,3 +47,4 @@ if (typeof value == "string") {
     let value1 = value; // OK
 }
 //Unknown Vs Any
+let x = ;

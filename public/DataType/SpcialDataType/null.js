@@ -64,9 +64,10 @@ console.log(a7 === true);
 let e1 = {
     employeecode: 10,
     name: null,
+    age: 19
 };
 let e2 = {
-    employeecode: 10,
+    employeecode: 12,
     name: undefined,
 };
 let e3 = null;

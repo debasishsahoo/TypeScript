@@ -5,4 +5,7 @@ namespace StringUtility {
   export function ToY(str: string): string {
     return str.toLowerCase();
   }
+  export function ToZ(str: string, from: number, length: number): string {
+    return str.substr(from, length);
+  }
 }
