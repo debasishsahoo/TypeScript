@@ -4,6 +4,13 @@ let num3: number = 0o337;
 let num4: number = 0b111001;
 let bigNumber: bigint = 9007199254740991n;
 
+
+
+
+
+
+
+
 let NumberValue: number = 0;
 //A new Number Objaect Is created
 let numberObj = new Number(1500);

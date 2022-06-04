@@ -8,6 +8,8 @@ console.log(typeof +y); //number
 console.log(+y); //1
 console.log(-y); //-1
 
+
+
 console.log(+'100'); //100
 console.log(+'100.5175'); //100.5175
 
