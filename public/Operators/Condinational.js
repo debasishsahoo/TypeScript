@@ -7,8 +7,9 @@ console.log(x < 20); //true
 console.log(x < 15); //true
 console.log(x < 10); //false
 console.log(x < 5); //false
-//String Examples
+//String Examples 
 let y = 'Hello';
+//72<72
 console.log(y < 'I'); //true
 console.log(y < 'Hello'); //false
 console.log(y < 'H'); //false

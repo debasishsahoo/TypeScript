@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-//let email:string;
-let email = 'mail@example.com';
+let email;
+//let email: string = 'mail@example.com';
 //let email = '';
 //let email = '0';
 let selecteditem = email ?? 'No Email Selected';
