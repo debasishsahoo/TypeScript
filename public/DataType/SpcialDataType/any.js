@@ -11,6 +11,6 @@ arr.push('Sahoo');
 console.log(arr);
 let anyVar;
 anyVar = '100.5175';
-anyVar = {};
+anyVar = {}; //blank object
 anyVar = 100.51575;
 console.log(anyVar.toFixed(2));

@@ -6,15 +6,19 @@ let NumVar: number;
 console.log(NumVar);
 
 //Optional Function argument
-function foo1(x?: string) {
+function foo1(x?: string ) {
   console.log(x);
 }
+
 foo1();
 
 function foo2(x: undefined) {
   console.log(x);
 }
 foo2();
+
+
+
 
 //Non-existing array elements
 const cars: string[] = ['Saab', 'Volvo', 'BMW'];
@@ -24,6 +28,11 @@ console.log(cars[3]);
 //Explicitly set to undefined
 let myVar = undefined;
 console.log('myVar:', myVar);
+
+
+
+
+
 
 //Undefined Type
 let num: undefined;

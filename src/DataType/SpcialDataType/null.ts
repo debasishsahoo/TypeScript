@@ -10,15 +10,25 @@ function person(name: string, dateOfMarriage: Date | null) {
     dateOfMarriage: dateOfMarriage,
   };
 }
-console.log(person('Debasish Sahoo', null));
+console.log(person('Deb halder', null));
+
+
 
 //Null Data Type
 let NullVarible: null;
-
 console.log(NullVarible);
 
 NullVarible = null;
 console.log(NullVarible);
+
+
+
+
+
+
+
+
+
 
 //Allowed
 NullVarible = null;
@@ -27,6 +37,12 @@ NullVarible = undefined; //only if strictNullCheck is disabled
 //Not Allowed
 NullVarible = 10; //type '10' is not assignable to type 'null'
 NullVarible = {};
+
+
+
+
+
+
 
 //Non Nullable Types
 
@@ -141,6 +157,7 @@ interface Employee2 {
   employeecode: number;
   name?: string;
 }
+
 
 let e7: Employee = {
   employeecode: 10,

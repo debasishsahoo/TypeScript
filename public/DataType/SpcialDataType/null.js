@@ -10,7 +10,7 @@ function person(name, dateOfMarriage) {
         dateOfMarriage: dateOfMarriage,
     };
 }
-console.log(person('Debasish Sahoo', null));
+console.log(person('Deb halder', null));
 //Null Data Type
 let NullVarible;
 console.log(NullVarible);
