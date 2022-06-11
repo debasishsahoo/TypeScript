@@ -7,6 +7,3 @@ let a = (x, y) => {
     return x + y;
 };
 a(2, 5);
-
-
-
