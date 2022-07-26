@@ -2,10 +2,10 @@ let StudentName: string = 'Debasish';
 let StudentDept: string = 'CS';
 
 //before ES6
-let outcome1: string = StudentName + ' Study in the' + StudentDept + 'Dept';
+let outcome1: string = StudentName + ' Study in the ' + StudentDept + ' Dept ';
 
 //After ES6
-let outcome2: string = `${StudentName}  Study in the ${StudentDept} Dept`;
+let outcome2: string = `${StudentName} Study in the ${StudentDept} dept`;
 
 console.log(outcome1);
 console.log(outcome2);
@@ -62,7 +62,7 @@ let str3: string = 'TypeScript';
 console.log(str3.indexOf('T'));
 console.log(str3.indexOf('p'));
 console.log(str3.indexOf('e'));
-console.log(str3.indexOf('T', 3));
+console.log(str3.indexOf('r', 3));
 
 console.log(str3.indexOf('t', 3));
 
@@ -76,7 +76,7 @@ str2 = 'TypeScript';
 
 console.log(str1.replace('Java', 'Type'));
 console.log(str1.replace('JavaScript', str2));
-console.log(str1.replace(/Hello/gi, 'Hi'));
+//console.log(str1.replace(/Hello/gi, 'Hi'));
 
 //split()
 
@@ -229,7 +229,7 @@ console.log(+'3.125e7');
 console.log(+'35 35');
 console.log(+'AB 35');
 
-//Parseint
+//ParseInt
 
 console.log(parseInt('100'));
 console.log(parseInt('100.5175'));

@@ -4,7 +4,10 @@ let a = null;
 console.log(a);
 console.log(typeof a);
 
-function person(name: string, dateOfMarriage: Date | null) {
+function person(
+  name: string,
+  dateOfMarriage: Date | null | string | number | true
+) {
   return {
     name: name,
     dateOfMarriage: dateOfMarriage,
@@ -12,7 +15,11 @@ function person(name: string, dateOfMarriage: Date | null) {
 }
 console.log(person('Deb halder', null));
 
+console.log(person('amit', '12/07/24'));
 
+console.log(person('suman', 15));
+
+console.log(person('Sup', true));
 
 //Null Data Type
 let NullVarible: null;
@@ -21,15 +28,6 @@ console.log(NullVarible);
 NullVarible = null;
 console.log(NullVarible);
 
-
-
-
-
-
-
-
-
-
 //Allowed
 NullVarible = null;
 NullVarible = undefined; //only if strictNullCheck is disabled
@@ -37,12 +35,6 @@ NullVarible = undefined; //only if strictNullCheck is disabled
 //Not Allowed
 NullVarible = 10; //type '10' is not assignable to type 'null'
 NullVarible = {};
-
-
-
-
-
-
 
 //Non Nullable Types
 
@@ -107,11 +99,6 @@ console.log(a7 == true); //false
 console.log(a7 === false); //false
 console.log(a7 === true);
 
-
-
-
-
-
 //StrictNullChecks
 interface Employee {
   employeecode: number;
@@ -121,7 +108,7 @@ interface Employee {
 let e1: Employee = {
   employeecode: 10,
   name: null,
-  age:19
+  age: 19,
 };
 
 let e2: Employee = {
@@ -130,9 +117,6 @@ let e2: Employee = {
 };
 
 let e3: Employee = null;
-
-
-
 
 interface Employee1 {
   employeecode: number;
@@ -158,7 +142,6 @@ interface Employee2 {
   name?: string;
 }
 
-
 let e7: Employee = {
   employeecode: 10,
   name: undefined, //ok
@@ -176,16 +159,10 @@ function getLength(s: string | null) {
   return s.length;
 }
 
-interface Student{
-  name:string,
-  age:number, 
-  dob:Date,
-  address:string,
-  betch:string,
-
+interface Student {
+  name: string;
+  age: number;
+  dob: Date;
+  address: string;
+  betch: string;
 }
-
-
-
-
-

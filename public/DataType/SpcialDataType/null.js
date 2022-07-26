@@ -11,6 +11,9 @@ function person(name, dateOfMarriage) {
     };
 }
 console.log(person('Deb halder', null));
+console.log(person('amit', '12/07/24'));
+console.log(person('suman', 15));
+console.log(person('Sup', true));
 //Null Data Type
 let NullVarible;
 console.log(NullVarible);
@@ -64,7 +67,7 @@ console.log(a7 === true);
 let e1 = {
     employeecode: 10,
     name: null,
-    age: 19
+    age: 19,
 };
 let e2 = {
     employeecode: 12,

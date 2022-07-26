@@ -1,50 +1,50 @@
-export {};
-//named function
-function display() {
-  console.log('hello this is function');
+//Normal Function
+function fun() {
+  console.log('Hello TypeScript');
 }
-//function ->keyword
-//display ->function Name
-//{} -> function Body
 
-display(); //function calling
+fun();
 
-//Argumented function
-function dosum(x: number, y: number): number {
+//Argumented Function
+
+function Sum(x: number, y: number) {
   return x + y;
 }
 
-dosum('debasish', 'sahoo');
+console.log('Sum(2,5):', Sum(2, 5));
 
-//Anonymous function
-let x = function () {
-  console.log('hello typescrtip');
-};
-x();
-
-let y = function (x: number, y: number): number {
-  return x * y;
+//Anonymous Function
+let greet = function () {
+  console.log('Hello TypeScript');
 };
 
-console.log('The product is', y(2, 4));
+greet();
 
-//optional Parameter
-let greet = function (a: string, b?: string): string {
-  return a + ' ' + b;
+//function Parameter
+let add = function (x: number, y: number) {
+  return x + y;
 };
 
-console.log('greet:', greet('hello', 'deb'));
+console.log('add(5, 6):', add(5, 6));
 
-console.log('greet:', greet('hello'));
+console.log('add(5, 6):', add(6));
 
+console.log('add(5, 6):', add(5, 6, 7));
 
+//Optinal Parameter
+let add1 = function (x: number, y?: number) {
+  return x + y;
+};
 
+console.log('add(5, 6):', add1(5, 6));
+
+console.log('add(5, 6):', add1(6));
 
 //Default Parameter
-let greet1 = function (a: string, b: string = 'Sayan'): string {
-  return a + ' ' + b;
+let add2 = function (x: number, y: number = 0) {
+  return x + y;
 };
 
-console.log('greet:', greet1('hello', 'deb'));
+console.log('add(5, 6):', add2(5, 6));
 
-console.log('greet:', greet1('hello'));
+console.log('add(5, 6):', add2(6));

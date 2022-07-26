@@ -1,26 +1,27 @@
 let num1: number = 14;
-let num2: number = 0x37cf;
-let num3: number = 0o337;
-let num4: number = 0b111001;
+let num2: number = 0x37cf; //hex
+let num3: number = 0o337; //oct
+let num4: number = 0b111001; //bin
 let bigNumber: bigint = 9007199254740991n;
 
-
-
-
-
-
-
-
 let NumberValue: number = 0;
+
+
+
+
+//x='2+5+9+10-45'
+
+
 //A new Number Objaect Is created
 let numberObj = new Number(1500);
 console.log(typeof numberObj);
 
 let numberObj2 = new Number('1500');
-console.log('numberObj2:', typeof numberObj2);
+console.log(typeof numberObj2);
 
-let numberObj3: number = new Number('1500');
-//NumberValue = numberObj;
+let numberObj3 = new Number('1500');
+console.log(numberObj3)
+
 
 console.log('num1:', num1);
 console.log('num2:', num2);
@@ -89,9 +90,17 @@ console.log(myNumber.toString(5));
 console.log(myNumber);
 console.log(myNumber.valueOf());
 
+let x1: number = 0x4;
+console.log('x1:', x1);
+console.log(typeof x1);
+let x2: string = '45';
+console.log('x2:', x2);
+console.log(typeof x2);
+
 //The NaN stands for not a number. It is the result of numerical operations, where the result is not a number.
 
-console.log(Number('test'));
+console.log(Number('deb'));
+
 console.log(0 / 0);
 
 ////////////////////////////////////////
@@ -140,8 +149,8 @@ console.log(0.1 + 0.2 === 0.30000000000000004);
 
 //abc() is abslute function
 function numberEquals(x: number, y: number): boolean {
-  console.log(Math.abs(x - y))
-  return Math.abs(x - y) < Number.EPSILON;
+  console.log(Math.abs(x - y));
+  return Math.abs(x - y) < Number.EPSILON;             //10   ==   10.06
 }
 //0.30000000000000004-0.3=0.00000000000000004
 console.log(numberEquals(0.1 + 0.2, 0.3));

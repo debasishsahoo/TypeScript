@@ -2,9 +2,9 @@
 let StudentName = 'Debasish';
 let StudentDept = 'CS';
 //before ES6
-let outcome1 = StudentName + ' Study in the' + StudentDept + 'Dept';
+let outcome1 = StudentName + ' Study in the ' + StudentDept + ' Dept ';
 //After ES6
-let outcome2 = `${StudentName}  Study in the ${StudentDept} Dept`;
+let outcome2 = `${StudentName} Study in the ${StudentDept} dept`;
 console.log(outcome1);
 console.log(outcome2);
 let message = 'Hello World';
@@ -42,7 +42,7 @@ let str3 = 'TypeScript';
 console.log(str3.indexOf('T'));
 console.log(str3.indexOf('p'));
 console.log(str3.indexOf('e'));
-console.log(str3.indexOf('T', 3));
+console.log(str3.indexOf('r', 3));
 console.log(str3.indexOf('t', 3));
 let strValue = 'This is a primitive string. But is has properties & methods';
 let pos = strValue.indexOf('primitive');
@@ -52,7 +52,7 @@ str1 = 'Hello Javascript';
 str2 = 'TypeScript';
 console.log(str1.replace('Java', 'Type'));
 console.log(str1.replace('JavaScript', str2));
-console.log(str1.replace(/Hello/gi, 'Hi'));
+//console.log(str1.replace(/Hello/gi, 'Hi'));
 //split()
 str1 = 'Apple, Banana, Orange';
 str2 = ',';
@@ -154,7 +154,7 @@ console.log(+'0o51');
 console.log(+'3.125e7');
 console.log(+'35 35');
 console.log(+'AB 35');
-//Parseint
+//ParseInt
 console.log(parseInt('100'));
 console.log(parseInt('100.5175'));
 console.log(parseInt('10AA0.5175'));

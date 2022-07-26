@@ -1,36 +1,35 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-//named function
-function display() {
-    console.log('hello this is function');
+//Normal Function
+function fun() {
+    console.log('Hello TypeScript');
 }
-//function ->keyword
-//display ->function Name
-//{} -> function Body
-display(); //function calling
-//Argumented function
-function dosum(x, y) {
+fun();
+//Argumented Function
+function Sum(x, y) {
     return x + y;
 }
-dosum('debasish', 'sahoo');
-//Anonymous function
-let x = function () {
-    console.log('hello typescrtip');
+console.log('Sum(2,5):', Sum(2, 5));
+//Anonymous Function
+let greet = function () {
+    console.log('Hello TypeScript');
 };
-x();
-let y = function (x, y) {
-    return x * y;
+greet();
+//function Parameter
+let add = function (x, y) {
+    return x + y;
 };
-console.log('The product is', y(2, 4));
-//optional Parameter
-let greet = function (a, b) {
-    return a + ' ' + b;
+console.log('add(5, 6):', add(5, 6));
+console.log('add(5, 6):', add(6));
+console.log('add(5, 6):', add(5, 6, 7));
+//Optinal Parameter
+let add1 = function (x, y) {
+    return x + y;
 };
-console.log('greet:', greet('hello', 'deb'));
-console.log('greet:', greet('hello'));
+console.log('add(5, 6):', add1(5, 6));
+console.log('add(5, 6):', add1(6));
 //Default Parameter
-let greet1 = function (a, b = 'Sayan') {
-    return a + ' ' + b;
+let add2 = function (x, y = 0) {
+    return x + y;
 };
-console.log('greet:', greet1('hello', 'deb'));
-console.log('greet:', greet1('hello'));
+console.log('add(5, 6):', add2(5, 6));
+console.log('add(5, 6):', add2(6));
