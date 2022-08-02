@@ -69,3 +69,62 @@ console.log(
 for (let i = 0; i <= Student1.length; i++) {
   console.log(Student1[i]);
 }
+
+//[1,2,3,4,'FIVE',6,7,8,9,'Ten']
+
+let Arr4: Array<number | string> = [1, 2, 3, 4, 'FIVE', 6, 7, 8, 9, 'Ten'];
+
+let Arr5: (number | string | boolean | bigint)[] = [
+  1,
+  2,
+  true,
+  4,
+  'FIVE',
+  6,
+  false,
+  8,
+  'Ten',
+];
+
+let arr6: any[] = [1, 2, null];
+
+//Access Array Elements
+console.log(arr6[0]);
+
+console.log(arr6[2]);
+
+//Loop
+for (let index in Arr5) {
+  console.log(Arr5[index]);
+}
+
+//Arr5[0]
+//Arr5[1]
+//Arr5[2]
+//Arr5[3]
+//Arr5[4]
+//Arr5[5]
+//Arr5[6]
+//Arr5[7]
+//Arr5[8]
+//Arr5[9]
+
+for (let i = 0; i < Arr5.length; i++) {
+  console.log(Arr5[i]);
+}
+
+let Arr9: Array<number> = [1, 8, 9, 2, 3, 4, 6, 7];
+
+console.log('Arr9:', Arr9);
+
+
+console.log('Arr9:', Arr9.reverse());
+
+console.log('Arr9:', Arr9.sort());
+
+console.log('Arr9:', Arr9.sort().reverse());
+
+
+
+
+console.log('Arr9:', Arr9);

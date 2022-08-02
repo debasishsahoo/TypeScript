@@ -29,3 +29,18 @@ console.log('obj:', obj);
 console.log('Name:', obj.GetName());
 
 console.log('Name:', obj.GetDetails(1));
+
+const obj1 = new Student(1, 'Sourav');
+console.log('obj:', obj);
+console.log('Name:', obj.GetName());
+console.log('Name:', obj.GetDetails(1));
+
+const obj2 = new Student(2, 'Amit');
+console.log('obj:', obj);
+console.log('Name:', obj.GetName());
+console.log('Name:', obj.GetDetails(1));
+
+const obj3 = new Student(3, 'Supuri');
+console.log('obj:', obj);
+console.log('Name:', obj.GetName());
+console.log('Name:', obj.GetDetails(1));
