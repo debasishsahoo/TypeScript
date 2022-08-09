@@ -7,7 +7,6 @@ a = ['Debasish', 'Sahoo'];
 console.log(typeof a);
 a = true;
 console.log(typeof a);
-
 function SayHello(arg) {
     if (typeof arg == 'number') {
         console.log('Recived A number');
