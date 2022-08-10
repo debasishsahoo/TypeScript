@@ -1,6 +1,6 @@
 export {};
 
-let num1: number = 45;
+let num1: number ='';
 const num2: number = 48;
 let a: number = 0x37cf; //hex number
 let b: number = 0o337; //ocatal
