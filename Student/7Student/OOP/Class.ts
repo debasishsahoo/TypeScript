@@ -54,7 +54,7 @@ class Human {
   }
 }
 
-// Object of Student Class
+// Object of Human Class
 let Amit1: Human = new Human(2, 2, 4);
 let Suman1: Human = new Human(2, 2, 2);
 let Indronil1: Human = new Human(2, 2, 4);

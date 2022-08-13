@@ -57,8 +57,8 @@ function getName(item: Product | Student) {
   }
 }
 
-function Engine(arg: true | false | 'Start' | 'Stop' | 1 | 0): void {
-  if (arg == 'Start' || arg == true || arg == 1) {
+function Engine(arg: true | false | 'START' | 'Stop' | 1 | 0): void {
+  if (arg == 'START' || arg == true || arg == 1) {
     console.log('Engine Start');
   }
 
@@ -66,6 +66,8 @@ function Engine(arg: true | false | 'Start' | 'Stop' | 1 | 0): void {
     console.log('Engine Stop');
   }
 }
+console.log('start'.toUpperCase());
+let xyz = 'start'.toUpperCase();
+console.log('xyz:', xyz);
 
-Engine('start');
-Engine('Start');
+Engine(xyz);
