@@ -40,7 +40,7 @@ class Human {
         return `Eye:${this.eye}`;
     }
 }
-// Object of Student Class
+// Object of Human Class
 let Amit1 = new Human(2, 2, 4);
 let Suman1 = new Human(2, 2, 2);
 let Indronil1 = new Human(2, 2, 4);

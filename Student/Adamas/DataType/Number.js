@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-let num1 = 45;
+let num1 = '';
 const num2 = 48;
 let a = 0x37cf; //hex number
 let b = 0o337; //ocatal

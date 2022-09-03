@@ -51,12 +51,14 @@ function getName(item) {
     }
 }
 function Engine(arg) {
-    if (arg == 'Start' || arg == true || arg == 1) {
+    if (arg == 'START' || arg == true || arg == 1) {
         console.log('Engine Start');
     }
     if (arg == 'Stop' || arg == false || arg == 0) {
         console.log('Engine Stop');
     }
 }
-Engine('start');
-Engine('Start');
+console.log('start'.toUpperCase());
+let xyz = 'start'.toUpperCase();
+console.log('xyz:', xyz);
+Engine(xyz);
