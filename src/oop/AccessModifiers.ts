@@ -1,4 +1,4 @@
-//Private ->Same Class Access only
+//Private ->Same Class Access only or Local Object
 //Protected
 //Public ->Any one can Access
 
@@ -37,6 +37,19 @@ class Student2 {
 }
 let student: Student2 = new Student2(1, 'Debasish');
 console.log(student.display());
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //Protected
 class Student3 {

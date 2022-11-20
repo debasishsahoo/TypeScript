@@ -22,6 +22,8 @@ class AccountingDepartment extends Department {
   }
 }
 
+
+
 let department: Department;
 department = new AccountingDepartment();
 department.printName();

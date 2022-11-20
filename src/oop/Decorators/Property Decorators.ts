@@ -5,6 +5,7 @@
 // Either the constructor function of the class for a static member or the prototype of the class for an instance member.
 // The member name.
 
+export { }
 class Company {
   @ReadOnly
   name: string = 'google.com';
